@@ -10,6 +10,12 @@ public class GameManager : MonoBehaviour
     public GameObject C1;
     public GameObject C2;
 
+    public bool firstLoop= false;
+
+    //Variables de Timer
+    public float timerMin=0f;
+    public float timerHrs= 0f;
+
 
     void Start()
     {
@@ -31,8 +37,14 @@ public class GameManager : MonoBehaviour
         if (C1.transform.position.Equals(C1pos.transform.position)&& C2.transform.position.Equals(C2pos.transform.position))
         {
             Debug.Log("Primer Puzzle Completado");
+            firstLoop = true;
 
         }
+    }
+
+    void Timer()
+    {
+
     }
 
 

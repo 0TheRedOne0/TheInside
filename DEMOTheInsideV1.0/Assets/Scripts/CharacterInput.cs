@@ -14,7 +14,7 @@ public class CharacterInput : MonoBehaviour
     //1st Puzzle variables
     public GameObject Inventory;
     public GameObject ActualPic;
-    private bool ItemHold = false;
+    public bool ItemHold;
 
 
     //FousVariables
@@ -24,12 +24,13 @@ public class CharacterInput : MonoBehaviour
     private void Start()
     {
         cam= Camera.main;
+        ItemHold = false;
     }
 
     private void OnTriggerStay(Collider other)
     {
         
-        if (other.gameObject.tag == "C" && Input.GetKeyDown(KeyCode.F))
+        if (ItemHold ==false && other.gameObject.tag == "C" && Input.GetKeyDown(KeyCode.F))
         {
 
             ActualPic= other.gameObject;
@@ -38,11 +39,12 @@ public class CharacterInput : MonoBehaviour
             //transform.rotation = leftRot;
         }
 
-        else if (ItemHold = true && other.gameObject.tag == "CPos" && Input.GetKeyDown(KeyCode.F))
+        else if (ItemHold == true && other.gameObject.tag == "CPos" && Input.GetKeyDown(KeyCode.F))
         {
 
 
             ActualPic.transform.position = other.transform.position;
+            ItemHold = false;
             //transform.rotation = leftRot;
         }
 
