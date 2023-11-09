@@ -14,6 +14,7 @@ public class CharacterInput : MonoBehaviour
     //1st Puzzle variables
     public GameObject Inventory;
     public GameObject ActualPic;
+    public GameObject DropPos;
     public bool ItemHold;
 
 
@@ -23,6 +24,7 @@ public class CharacterInput : MonoBehaviour
 
     private void Start()
     {
+        DropPos = GameObject.Find("DropPos");
         cam= Camera.main;
         ItemHold = false;
     }
@@ -56,6 +58,7 @@ public class CharacterInput : MonoBehaviour
     {
         Movement();
         AmbientC();
+        Drop();
         
 
         
@@ -98,6 +101,14 @@ public class CharacterInput : MonoBehaviour
         controller.Move(move * speed * Time.deltaTime);
     }
 
+    void Drop()
+    {
+        if (ItemHold == true && Input.GetKeyDown(KeyCode.G))
+        {
+            ActualPic.transform.position = DropPos.transform.position;
+            ItemHold = false;
+        }
+    }
     
 
 
