@@ -12,47 +12,74 @@ public class PabloManager : MonoBehaviour
     public float maxCooldown = 300.0f; // Maximo cooldown (en segundos)
     //bools areas
     [SerializeField] private bool Arriba = false;
+    [SerializeField] private bool Lock = false;
+
+    //public DesaparecerPablo PabloDeath;
+    public bool PabloPresent=false;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        
+        
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         StartCoroutine(EventosPabloArriba());
+        //LockPablo();
     }
 
     IEnumerator EventosPabloArriba()
     {
-        if (spawnpointsArriba.Length == 0 || Pablo == null)
-        {
-            Debug.LogError("problemas con los spawnpoints de arriba");
-            yield break;
-        }
+       
 
         for (int i = 0; i < 1; i++)
         {
-            if (Arriba == true)
+            if (Arriba == true && Lock==false && PabloPresent==false)
             {
                 int randomSpawnIndex = Random.Range(0, spawnpointsArriba.Length);
                 Vector3 spawnPosition = spawnpointsArriba[randomSpawnIndex].position;
 
                 // Instanciar el prefab
                 Instantiate(Pablo, spawnPosition, Quaternion.identity);
+                Lock = true;
 
-                yield return StartCoroutine(Cooldown());
+                //yield return StartCoroutine(Cooldown());
+
+                
+                float cooldownTime = Random.Range(minCooldown, maxCooldown);
+
+
+                yield return new WaitForSeconds(cooldownTime);
+                Lock = false;
             }
         }
     }
 
-    IEnumerator Cooldown()
+    /*void LockPablo()
+    {
+        if(Lock== true)
+        {
+            GetComponent<BoxCollider>().enabled=false;
+            
+        }
+        else if (Lock == false)
+        {
+            GetComponent<BoxCollider>().enabled = true;
+        }
+    }*/
+
+    /*IEnumerator Cooldown()
     {
         // Generar random cooldown 
         float cooldownTime = Random.Range(minCooldown, maxCooldown);
         yield return new WaitForSeconds(cooldownTime);
-    }
+    }*/
 
     private void OnTriggerEnter (Collider other)
     {

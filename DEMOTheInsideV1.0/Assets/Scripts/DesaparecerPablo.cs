@@ -5,13 +5,16 @@ using UnityEngine;
 public class DesaparecerPablo : MonoBehaviour
 {
     public float disappearTime = 3f;  // Time in seconds before the object disappears
-    private bool isLookingAtObject = false;
+    public bool ObjectDetect = false;
     private float timeLooking = 0f;
+    public bool PabloAlive = false;
 
+    public PabloManager pabloManager;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        pabloManager = FindObjectOfType<PabloManager>();
     }
 
     // Update is called once per frame
@@ -22,25 +25,29 @@ public class DesaparecerPablo : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit) && hit.transform == transform)
         {
-            isLookingAtObject = true;
+            ObjectDetect = true;
         }
         else
         {
-            isLookingAtObject = false;
+            ObjectDetect = false;
         }
 
-        if (isLookingAtObject)
+        if (ObjectDetect)
         {
             timeLooking += Time.deltaTime;
 
             if (timeLooking >= disappearTime)
             {
                 Destroy(gameObject); // This destroys the object when the timer expires
+                PabloAlive = false;
+                pabloManager.PabloPresent = PabloAlive;
             }
         }
         else
         {
             timeLooking = 0f; // Reset the timer if not looking at the object
+            PabloAlive = true;
+            pabloManager.PabloPresent = PabloAlive;
         }
     }
 }
