@@ -13,11 +13,6 @@ public class CharacterInput : MonoBehaviour
 
     //1st Puzzle variables
     public GameObject Inventory;
-    public GameObject C1pos;
-    public GameObject C2pos;
-    public GameObject C3pos;
-    public GameObject C4pos;
-    public GameObject C5pos;
     public GameObject ActualPic;
     private bool ItemHold = false;
 
