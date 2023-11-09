@@ -11,16 +11,52 @@ public class CharacterInput : MonoBehaviour
     //Inside/Outside Varibles
     public bool Inside = false;
 
+    //1st Puzzle variables
+    public GameObject Inventory;
+    public GameObject ActualPic;
+    private bool ItemHold = false;
+
+
+    //FousVariables
+    Camera cam;
+
+
     private void Start()
     {
-       
+        cam= Camera.main;
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        
+        if (other.gameObject.tag == "C" && Input.GetKeyDown(KeyCode.F))
+        {
+
+            ActualPic= other.gameObject;
+            ItemHold = true;
+           ActualPic.transform.position = Inventory.transform.position;
+            //transform.rotation = leftRot;
+        }
+
+        else if (ItemHold = true && other.gameObject.tag == "CPos" && Input.GetKeyDown(KeyCode.F))
+        {
+
+
+            ActualPic.transform.position = other.transform.position;
+            //transform.rotation = leftRot;
+        }
+
+    }
+ 
 
 
     void Update()
     {
         Movement();
         AmbientC();
+        
+
+        
     }
 
 
@@ -59,4 +95,8 @@ public class CharacterInput : MonoBehaviour
 
         controller.Move(move * speed * Time.deltaTime);
     }
+
+    
+
+
 }
