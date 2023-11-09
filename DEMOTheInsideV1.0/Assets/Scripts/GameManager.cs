@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public float timerHrs= 0f;
 
 
+
     void Start()
     {
         C1 = GameObject.Find("C1");
