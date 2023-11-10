@@ -6,6 +6,7 @@ TagManager:
   tags:
   - C
   - CPos
+  - Exit
   layers:
   - Default
   - TransparentFX
