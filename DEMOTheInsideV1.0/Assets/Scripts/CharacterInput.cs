@@ -17,6 +17,9 @@ public class CharacterInput : MonoBehaviour
     public GameObject DropPos;
     public bool ItemHold;
 
+    //TP Variables
+    public static bool ExitBoolCI= false;
+    public GameObject StartPoint;
 
     //FousVariables
     Camera cam;
@@ -24,8 +27,10 @@ public class CharacterInput : MonoBehaviour
 
     private void Start()
     {
+        Inventory = GameObject.Find("Inventory");
         DropPos = GameObject.Find("DropPos");
-        cam= Camera.main;
+        StartPoint = GameObject.Find("StartPoint");
+        cam = Camera.main;
         ItemHold = false;
     }
 
@@ -49,9 +54,22 @@ public class CharacterInput : MonoBehaviour
             ItemHold = false;
             //transform.rotation = leftRot;
         }
-
+        else if (other.gameObject.tag == "Exit" /*&& Input.GetKeyDown(KeyCode.F)*/)
+        {
+            ExitBoolCI = true;
+            Debug.Log("Works1");
+            
+            
+        }
     }
- 
+   /* private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Exit" && Input.GetKeyDown(KeyCode.F))
+        {
+            ExitBool = true;
+        }
+    }*/
+
 
 
     void Update()
@@ -59,7 +77,7 @@ public class CharacterInput : MonoBehaviour
         Movement();
         AmbientC();
         Drop();
-        
+        TP();
 
         
     }
@@ -109,7 +127,22 @@ public class CharacterInput : MonoBehaviour
             ItemHold = false;
         }
     }
-    
+
+    void TP()
+    {
+        //ExitBoolGM = CharacterInput.ExitBoolCI;
+        //Debug.Log("WORK1");
+        if (ExitBoolCI == true)
+        {
+
+            transform.position = StartPoint.transform.position;
+            ExitBoolCI = false;
+            //ExitBoolGM = false;
+            Debug.Log("WORK1000");
+        }
+    }
+
+
 
 
 }
