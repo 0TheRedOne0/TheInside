@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using TMPro;
+
 public class GameManager : MonoBehaviour
 {
     //Variables TP
@@ -25,10 +27,12 @@ public class GameManager : MonoBehaviour
     public GameObject C3;
     public GameObject C4;
 
-    
+
 
 
     //Variables de Timer
+    public TMP_Text Hrs;
+    public TMP_Text Min;
     public float timerSec = 00f;
     public float timerMin=00f;
     public float timerHrs= 00f;
@@ -52,6 +56,9 @@ public class GameManager : MonoBehaviour
         Player= GameObject.Find("FPplayer");
         StartPoint = GameObject.Find("StartPoint");
         Exit = GameObject.Find("Exit");
+
+        //Timer
+       
 
 
     }
@@ -80,6 +87,8 @@ public class GameManager : MonoBehaviour
 
     void Timer()
     {
+        Hrs.SetText(timerHrs.ToString("00"));
+        Min.SetText(timerMin.ToString("00"));
         //Debug.Log("La hora es:" + timerMin);
         if (firstLoop == true)
         {
