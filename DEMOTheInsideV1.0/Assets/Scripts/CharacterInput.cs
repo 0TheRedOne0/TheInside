@@ -23,6 +23,7 @@ public class CharacterInput : MonoBehaviour
 
     //FousVariables
     Camera cam;
+    public bool Focus;
 
 
     private void Start()
@@ -134,12 +135,19 @@ public class CharacterInput : MonoBehaviour
         //Debug.Log("WORK1");
         if (ExitBoolCI == true)
         {
-
+            Focus = true;
             transform.position = StartPoint.transform.position;
             ExitBoolCI = false;
+            StartCoroutine(ReCam());
             //ExitBoolGM = false;
             Debug.Log("WORK1000");
         }
+    }
+
+    IEnumerator ReCam()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Focus = false;
     }
 
 
