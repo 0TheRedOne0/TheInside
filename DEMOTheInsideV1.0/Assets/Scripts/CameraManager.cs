@@ -8,7 +8,7 @@ public class CameraManager : MonoBehaviour
     public float mouseSensitivity = 100;
     public Transform playerBody;
     private float xRotation = 0;
-    private bool CamBlock = false; // bool para checar si esta bloqueada
+    [SerializeField] private bool CamBlock = false; // bool para checar si esta bloqueada
     [SerializeField] private CharacterInput CI; //referencia al CharacterInput
     public Transform FP; // El punto al que deseas enfocar
 
