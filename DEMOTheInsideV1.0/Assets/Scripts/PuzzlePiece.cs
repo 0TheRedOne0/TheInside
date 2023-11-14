@@ -9,18 +9,19 @@ public class PuzzlePiece : MonoBehaviour
     [SerializeField] private GameObject ThisPiece;
     [SerializeField] private bool placed;
     [SerializeField] private Camera cam2;
-    [SerializeField] private int Puzzle = 0;
+    public GameManager GM;
+   
 
     void OnMouseUp()
     {
         Debug.Log("Soltada");
         if (ThisPiece.gameObject.tag == PS.gameObject.tag)
         {
-            if(Vector2.Distance(ThisPiece.transform.position, PS.transform.position) < 3)
+            if (Vector2.Distance(ThisPiece.transform.position, PS.transform.position) < 3)
             {
                 transform.position = PS.transform.position;
                 placed = true;
-                Puzzle = +1;
+                GM.Puzzle += 1;
             }
         }
     }
@@ -30,15 +31,15 @@ public class PuzzlePiece : MonoBehaviour
         else
         {
             //Debug.Log("Agarrada"); 
-           // offset = GetMPos() - (Vector2)transform.position;
-           transform.position = GetMPos() ;
+            // offset = GetMPos() - (Vector2)transform.position;
+            transform.position = GetMPos();
             Debug.Log(GetMPos());
         }
     }
     Vector3 GetMPos()
     {
-         return cam2.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100));
-       // return new Vector3(Input.mousePosition.x, Input.mousePosition.y, -10);
+        return cam2.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100));
+        // return new Vector3(Input.mousePosition.x, Input.mousePosition.y, -10);
 
     }
 }
