@@ -27,9 +27,7 @@ public class GameManager : MonoBehaviour
     public GameObject C3;
     public GameObject C4;
 
-
-
-
+    
     //Variables de Timer
     public TMP_Text Hrs;
     public TMP_Text Min;
@@ -37,8 +35,6 @@ public class GameManager : MonoBehaviour
     public float timerMin=00f;
     public float timerHrs= 00f;
     public bool am = true;
-
-
 
     void Start()
     {
@@ -69,10 +65,6 @@ public class GameManager : MonoBehaviour
         Psala();
         Timer();
     }
-
-   
-   
-
 
     void Psala()
     {
