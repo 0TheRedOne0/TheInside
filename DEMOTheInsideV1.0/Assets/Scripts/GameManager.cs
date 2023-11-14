@@ -27,13 +27,7 @@ public class GameManager : MonoBehaviour
     public GameObject C3;
     public GameObject C4;
 
-    //variables de la Cocina
-    public List<PieceSlot> PSPF;
-    public Transform PSParent, PPParent;
-    public PuzzlePiece PP;
-    public PieceSlot PS;
-
-
+    
     //Variables de Timer
     public TMP_Text Hrs;
     public TMP_Text Min;
@@ -41,8 +35,6 @@ public class GameManager : MonoBehaviour
     public float timerMin=00f;
     public float timerHrs= 00f;
     public bool am = true;
-
-
 
     void Start()
     {
@@ -73,19 +65,6 @@ public class GameManager : MonoBehaviour
         Psala();
         Timer();
     }
-
-   
-   void SpawnPP()
-    {
-        for (int i = 0; i < 9; i++)
-        {
-            var spawnPS = Instantiate(PS, PSParent.GetChild(i).position, Quaternion.identity);
-
-            var spawnPP = Instantiate(PP, PPParent.GetChild(i).position, Quaternion.identity);
-            spawnPP.Init(spawnPS);
-        }
-    }
-
 
     void Psala()
     {

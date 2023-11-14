@@ -5,36 +5,40 @@ using UnityEngine;
 public class PuzzlePiece : MonoBehaviour
 {
     private Vector2 offset;
-    private PieceSlot PS;
+    [SerializeField] private GameObject PS;
+    [SerializeField] private GameObject ThisPiece;
     [SerializeField] private bool placed;
+    [SerializeField] private Camera cam2;
+    [SerializeField] private int Puzzle = 0;
 
-    public void Init(PieceSlot slot)
+    void OnMouseUp()
     {
-        PS = slot;
-    }
-
-    void Update()
-    {
-        if (placed) return;
-        var MPos = GetMPos();
-        transform.position = MPos - offset;
-    }
-    void OnMouseDown()
-    {
-        offset = GetMPos() - (Vector2)transform.position;
-    }
-
-    void OnMouseUp() 
-    {
-        if(Vector2.Distance(transform.position, PS.transform.position) < 3 )
+        Debug.Log("Soltada");
+        if (ThisPiece.gameObject.tag == PS.gameObject.tag)
         {
-            transform.position = PS.transform.position;
-            placed = true;
+            if(Vector2.Distance(ThisPiece.transform.position, PS.transform.position) < 3)
+            {
+                transform.position = PS.transform.position;
+                placed = true;
+                Puzzle = +1;
+            }
         }
     }
-
-    Vector2 GetMPos ()
+    private void OnMouseDrag()
     {
-        return Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (placed) return;
+        else
+        {
+            //Debug.Log("Agarrada"); 
+           // offset = GetMPos() - (Vector2)transform.position;
+           transform.position = GetMPos() ;
+            Debug.Log(GetMPos());
+        }
+    }
+    Vector3 GetMPos()
+    {
+         return cam2.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100));
+       // return new Vector3(Input.mousePosition.x, Input.mousePosition.y, -10);
+
     }
 }

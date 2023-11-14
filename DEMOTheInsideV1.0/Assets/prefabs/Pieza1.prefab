@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3379944154059020826}
   - component: {fileID: 600650439042328136}
   - component: {fileID: 260220812647893990}
-  - component: {fileID: 6700400970984070783}
+  - component: {fileID: 1510206865238312999}
   m_Layer: 5
   m_Name: Pieza1
   m_TagString: Untagged
@@ -109,7 +109,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.017082214, y: 1.3344498}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -120,9 +120,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 99.931015, y: 103.26282}
   m_EdgeRadius: 0
---- !u!114 &6700400970984070783
+--- !u!114 &1510206865238312999
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,3 +134,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80de0d23bf7e4d049944237595ec4ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  placed: 1
+  cam2: {fileID: 0}
