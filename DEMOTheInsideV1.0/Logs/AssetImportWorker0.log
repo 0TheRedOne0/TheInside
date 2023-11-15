@@ -1,3 +1,4 @@
+
 Unity Editor version:    2022.3.5f1 (9674261d40ee)
 Branch:                  2022.3/release
 Build type:              Release
@@ -12,6 +13,7 @@ Pro License: YES
 
 COMMAND LINE ARGUMENTS:
 /Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/MacOS/Unity
+
 -adb2
 -batchMode
 -noUpm
@@ -25,6 +27,7 @@ Logs/AssetImportWorker0.log
 51003
 Successfully changed project path to: /Users/f.a/Documents/GitHub/THE_INSIDE/TheInside/DEMOTheInsideV1.0
 /Users/f.a/Documents/GitHub/THE_INSIDE/TheInside/DEMOTheInsideV1.0
+
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -56,6 +59,7 @@ Successfully changed project path to: /Users/f.a/Documents/GitHub/THE_INSIDE/The
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+
 Player connection [140704319635072] Host "[IP] 10.25.75.77 [Port] 0 [Flags] 2 [Guid] 2172688361 [EditorId] 2172688361 [Version] 1048832 [Id] OSXEditor(0,PFVs-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [140704319635072] Host "[IP] 10.25.75.77 [Port] 0 [Flags] 2 [Guid] 2172688361 [EditorId] 2172688361 [Version] 1048832 [Id] OSXEditor(0,PFVs-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
@@ -86,6 +90,7 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.446 seconds
 Domain Reload Profiling: 1154ms
 	BeginReloadAssembly (275ms)
+
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
@@ -120,6 +125,7 @@ Domain Reload Profiling: 1154ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
+
 Symbol file LoadedFromMemory doesn't match image /Users/f.a/Documents/GitHub/THE_INSIDE/TheInside/DEMOTheInsideV1.0/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image /Users/f.a/Documents/GitHub/THE_INSIDE/TheInside/DEMOTheInsideV1.0/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  1.497 seconds
@@ -169,60 +175,37 @@ Unloading 65 unused Assets / (369.2 KB). Loaded Objects now: 5374.
 Memory consumption went from 206.6 MB to 206.2 MB.
 Total: 7.362914 ms (FindLiveObjects: 0.866634 ms CreateObjectMapping: 0.449174 ms MarkObjects: 4.971061 ms  DeleteObjects: 1.074908 ms)
 
+
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 17239.373165 seconds.
-  path: Assets/prefabs
-  artifactKey: Guid(9f0b1ae16f23d6e479e90ea460f5670a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabs using Guid(9f0b1ae16f23d6e479e90ea460f5670a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e86f0910bc7dbcfbbab2bc89b26904e') in 0.005815 seconds
+
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000129 seconds.
-  path: Assets/Suff/UniversalRenderPipelineGlobalSettings.asset
-  artifactKey: Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Suff/UniversalRenderPipelineGlobalSettings.asset using Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0826c28cb0ac08c7995a8211ea1eb1f9') in 0.003233 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000075 seconds.
-  path: Assets/prefabs/PabloPHprefab.prefab
-  artifactKey: Guid(48f3eeb44ec7c924483ef477bd9e74d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabs/PabloPHprefab.prefab using Guid(48f3eeb44ec7c924483ef477bd9e74d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59f290f3b0025efd23acdae0a7af3bcd') in 0.006659 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000078 seconds.
-  path: Assets/2DArt
-  artifactKey: Guid(d510a293f8a8543f5b01a3d9f7a3e17b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2DArt using Guid(d510a293f8a8543f5b01a3d9f7a3e17b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff379493859057ba4817859383f5831') in 0.000420 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
+
   Time since last request: 0.000183 seconds.
   path: Assets/Suff
   artifactKey: Guid(7c71d632ecbb84eb3af58c25cbff1d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Suff using Guid(7c71d632ecbb84eb3af58c25cbff1d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e89c2178e518db3682810f02a5c812ad') in 0.000403 seconds
+
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
+
   Time since last request: 0.000113 seconds.
   path: Assets/Scripts
   artifactKey: Guid(ee4bee3d4f948b9498bdaecf4a75ee5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -231,30 +214,29 @@ Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
+
   Time since last request: 0.000069 seconds.
   path: Assets/Suff/Readme.asset
   artifactKey: Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Suff/Readme.asset using Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13b11e6936975384c89f4f7e6268c69a') in 0.003590 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/Models
-  artifactKey: Guid(eb4239b8da85e844f86719c46552de92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models using Guid(eb4239b8da85e844f86719c46552de92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76033be2b0f730160619e1d84637ff46') in 0.000533 seconds
+
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
+
   Time since last request: 0.000239 seconds.
   path: Assets/Materiales
   artifactKey: Guid(ede22580792caf542bdf656957856e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Materiales using Guid(ede22580792caf542bdf656957856e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ef86c863d28e983c5bca85de3f71787') in 0.000446 seconds
+
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
+
   Time since last request: 1.909213 seconds.
   path: Assets/Models/4x1.prefab
   artifactKey: Guid(220b131a7fc952142a8096ec27b3a502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -323,19 +305,23 @@ Received Import Request.
   path: Assets/Scripts/LockPad
   artifactKey: Guid(0f0f4b693eb27449981b2d3a5ff05433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/LockPad using Guid(0f0f4b693eb27449981b2d3a5ff05433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dc7f8ea1b5f49ec59df6dc5afb2823c') in 0.003821 seconds
+
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
+
   Time since last request: 15.179356 seconds.
   path: Assets/Scripts/LockPad.cs
   artifactKey: Guid(5bce48eed51724babbcef09b048dda04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/LockPad.cs using Guid(5bce48eed51724babbcef09b048dda04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adec32ad01296e17b826adecb4df476b') in 0.001353 seconds
+
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
+
 Symbol file LoadedFromMemory doesn't match image /Users/f.a/Documents/GitHub/THE_INSIDE/TheInside/DEMOTheInsideV1.0/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image /Users/f.a/Documents/GitHub/THE_INSIDE/TheInside/DEMOTheInsideV1.0/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  1.241 seconds
@@ -383,14 +369,17 @@ Unloading 40 unused Assets / (347.3 KB). Loaded Objects now: 5381.
 Memory consumption went from 180.7 MB to 180.4 MB.
 Total: 4.760254 ms (FindLiveObjects: 0.425321 ms CreateObjectMapping: 0.359509 ms MarkObjects: 3.676786 ms  DeleteObjects: 0.297523 ms)
 
+
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
@@ -416,10 +405,12 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  5.757 seconds
 Domain Reload Profiling: 7721ms
 	BeginReloadAssembly (440ms)
+
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (11ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+
 		CreateAndSetChildDomain (197ms)
 	RebuildCommonClasses (83ms)
 	RebuildNativeTypeToScriptingClass (22ms)
@@ -454,14 +445,17 @@ Unloading 40 unused Assets / (347.3 KB). Loaded Objects now: 5385.
 Memory consumption went from 183.7 MB to 183.3 MB.
 Total: 7.011679 ms (FindLiveObjects: 0.500971 ms CreateObjectMapping: 0.441334 ms MarkObjects: 5.772952 ms  DeleteObjects: 0.292159 ms)
 
+
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
@@ -753,10 +747,12 @@ Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
@@ -1484,14 +1480,17 @@ Unloading 41 unused Assets / (347.9 KB). Loaded Objects now: 5394.
 Memory consumption went from 187.2 MB to 186.8 MB.
 Total: 7.605459 ms (FindLiveObjects: 1.090272 ms CreateObjectMapping: 0.314683 ms MarkObjects: 5.865323 ms  DeleteObjects: 0.331416 ms)
 
+
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
@@ -1615,10 +1614,12 @@ Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
@@ -1636,10 +1637,12 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  2.065 seconds
 Domain Reload Profiling: 3368ms
 	BeginReloadAssembly (269ms)
+
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+
 		CreateAndSetChildDomain (105ms)
 	RebuildCommonClasses (67ms)
 	RebuildNativeTypeToScriptingClass (20ms)
@@ -1674,14 +1677,17 @@ Unloading 40 unused Assets / (347.4 KB). Loaded Objects now: 5403.
 Memory consumption went from 192.0 MB to 191.6 MB.
 Total: 5.253189 ms (FindLiveObjects: 0.565089 ms CreateObjectMapping: 0.580411 ms MarkObjects: 3.847336 ms  DeleteObjects: 0.259182 ms)
 
+
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
@@ -1761,14 +1767,17 @@ Unloading 40 unused Assets / (347.4 KB). Loaded Objects now: 5407.
 Memory consumption went from 194.9 MB to 194.5 MB.
 Total: 9.697854 ms (FindLiveObjects: 1.311376 ms CreateObjectMapping: 0.758821 ms MarkObjects: 6.589327 ms  DeleteObjects: 1.036246 ms)
 
+
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
@@ -1824,14 +1833,17 @@ Unloading 40 unused Assets / (347.2 KB). Loaded Objects now: 5411.
 Memory consumption went from 197.7 MB to 197.3 MB.
 Total: 8.097581 ms (FindLiveObjects: 0.972460 ms CreateObjectMapping: 0.542708 ms MarkObjects: 6.029484 ms  DeleteObjects: 0.551296 ms)
 
+
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
@@ -1887,14 +1899,17 @@ Unloading 41 unused Assets / (347.8 KB). Loaded Objects now: 5414.
 Memory consumption went from 200.4 MB to 200.0 MB.
 Total: 4.194213 ms (FindLiveObjects: 0.402057 ms CreateObjectMapping: 0.309735 ms MarkObjects: 3.238278 ms  DeleteObjects: 0.243372 ms)
 
+
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
@@ -1908,3 +1923,4 @@ Received Import Request.
 Start importing Assets/prefabs/DoorStudio.prefab using Guid(96ebe9547d0424328ad8c31bb13654f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c9b3e7ac6d8f89fd138fc37a787a218') in 0.321153 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 91
+

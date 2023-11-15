@@ -27,8 +27,12 @@ public class GameManager : MonoBehaviour
     public GameObject C3;
     public GameObject C4;
 
-
-
+    //Variables de la Cocina
+    public PuzzlePiece RC;
+    public GameObject camRC;
+    public GameObject camMain;
+    [SerializeField] private bool RCcomp = false;
+    public int Puzzle = 0;
 
     //Variables de Timer
     public TMP_Text Hrs;
@@ -37,8 +41,6 @@ public class GameManager : MonoBehaviour
     public float timerMin=00f;
     public float timerHrs= 00f;
     public bool am = true;
-
-
 
     void Start()
     {
@@ -68,11 +70,8 @@ public class GameManager : MonoBehaviour
        
         Psala();
         Timer();
+        Rompechoya();
     }
-
-   
-   
-
 
     void Psala()
     {
@@ -126,5 +125,18 @@ public class GameManager : MonoBehaviour
         
     }
 
+    void Rompechoya()
+    {
+        if (Puzzle >= 9)
+        {
+            RCcomp = true;
+        }
+        if (RCcomp == true)
+        {
+            Debug.Log("Segundo Puzzle terminado");
+            camRC.SetActive(false);
+            camMain.SetActive(true);
+        }
+    }
 
 }
