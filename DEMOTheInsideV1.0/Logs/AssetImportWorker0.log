@@ -1,3 +1,13 @@
+
+Unity Editor version:    2022.3.5f1 (9674261d40ee)
+Branch:                  2022.3/release
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 14.0 (Build 23A344)
+Darwin version:          23.0.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        8192 MB
 Using pre-set license
 Built from '2022.3/release' branch; Version is '2022.3.5f1 (9674261d40ee) revision 9860134'; Using compiler version '192829333'; Build Type 'Release'
 OS: 'Windows 10  (10.0.19042) 64bit Professional' Language: 'es' Physical Memory: 16191 MB
@@ -5,12 +15,14 @@ BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, I
 
 COMMAND LINE ARGUMENTS:
 D:\Unity\2022.3.5f1\Editor\Unity.exe
+
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
+
 D:/trabajos/RepoTheInside/TheInside/DEMOTheInsideV1.0
 -logFile
 Logs/AssetImportWorker0.log
@@ -18,6 +30,7 @@ Logs/AssetImportWorker0.log
 52848
 Successfully changed project path to: D:/trabajos/RepoTheInside/TheInside/DEMOTheInsideV1.0
 D:/trabajos/RepoTheInside/TheInside/DEMOTheInsideV1.0
+
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,6 +62,7 @@ D:/trabajos/RepoTheInside/TheInside/DEMOTheInsideV1.0
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+
 Player connection [6804] Host "[IP] 10.25.83.158 [Port] 0 [Flags] 2 [Guid] 1362995585 [EditorId] 1362995585 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ND7A2RD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [6804] Host "[IP] 10.25.83.158 [Port] 0 [Flags] 2 [Guid] 1362995585 [EditorId] 1362995585 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ND7A2RD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
@@ -80,10 +94,12 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.379 seconds
 Domain Reload Profiling: 860ms
 	BeginReloadAssembly (115ms)
+
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+
 		CreateAndSetChildDomain (2ms)
 	RebuildCommonClasses (54ms)
 	RebuildNativeTypeToScriptingClass (18ms)
@@ -107,6 +123,7 @@ Domain Reload Profiling: 860ms
 			BeforeProcessingInitializeOnLoad (4ms)
 			ProcessInitializeOnLoadAttributes (202ms)
 			ProcessInitializeOnLoadMethodAttributes (67ms)
+
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -114,6 +131,7 @@ Domain Reload Profiling: 860ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
+
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoTheInside\TheInside\DEMOTheInsideV1.0\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoTheInside\TheInside\DEMOTheInsideV1.0\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  1.370 seconds
@@ -165,11 +183,14 @@ Total: 4.754400 ms (FindLiveObjects: 0.423500 ms CreateObjectMapping: 0.405400 m
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
@@ -180,27 +201,33 @@ Received Import Request.
   path: Assets/Scripts/LockFunc.cs
   artifactKey: Guid(63c48fb4d04326a4287596fc23a52b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/LockFunc.cs using Guid(63c48fb4d04326a4287596fc23a52b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae05ac5d68342f1f85834079eca3e251') in 0.003489 seconds
+
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
+
   Time since last request: 406.005632 seconds.
   path: Assets/Scripts/LockFunc.cs
   artifactKey: Guid(63c48fb4d04326a4287596fc23a52b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/LockFunc.cs using Guid(63c48fb4d04326a4287596fc23a52b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bf50843f63465d27ce177aeb7d3e934') in 0.000632 seconds
+
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
+
   Time since last request: 531.642628 seconds.
   path: Assets/Scripts/LockFunc.cs
   artifactKey: Guid(63c48fb4d04326a4287596fc23a52b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/LockFunc.cs using Guid(63c48fb4d04326a4287596fc23a52b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '660e25f31bebec976b29a0bbedaf2b7b') in 0.000814 seconds
+
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
+
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoTheInside\TheInside\DEMOTheInsideV1.0\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoTheInside\TheInside\DEMOTheInsideV1.0\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.845 seconds
@@ -252,26 +279,33 @@ Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+
   Time since last request: 40.442360 seconds.
   path: Assets/Scripts/LockFunc.cs
   artifactKey: Guid(63c48fb4d04326a4287596fc23a52b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/LockFunc.cs using Guid(63c48fb4d04326a4287596fc23a52b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ffa9fbfb26e5cdb8956fbcf71c286ad') in 0.009178 seconds
+
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
+
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoTheInside\TheInside\DEMOTheInsideV1.0\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoTheInside\TheInside\DEMOTheInsideV1.0\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.827 seconds
@@ -319,21 +353,27 @@ Unloading 39 unused Assets / (318.3 KB). Loaded Objects now: 5386.
 Memory consumption went from 171.6 MB to 171.3 MB.
 Total: 4.351800 ms (FindLiveObjects: 0.511200 ms CreateObjectMapping: 0.379000 ms MarkObjects: 3.352700 ms  DeleteObjects: 0.107900 ms)
 
+
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+
   Time since last request: 22.409136 seconds.
   path: Assets/Scripts/LockFunc.cs
   artifactKey: Guid(63c48fb4d04326a4287596fc23a52b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -390,20 +430,26 @@ Unloading 39 unused Assets / (318.4 KB). Loaded Objects now: 5390.
 Memory consumption went from 171.6 MB to 171.3 MB.
 Total: 4.232900 ms (FindLiveObjects: 0.394900 ms CreateObjectMapping: 0.372300 ms MarkObjects: 3.359200 ms  DeleteObjects: 0.105100 ms)
 
+
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoTheInside\TheInside\DEMOTheInsideV1.0\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -516,10 +562,12 @@ Unloading 39 unused Assets / (318.3 KB). Loaded Objects now: 5398.
 Memory consumption went from 171.6 MB to 171.3 MB.
 Total: 4.785000 ms (FindLiveObjects: 0.433000 ms CreateObjectMapping: 0.503400 ms MarkObjects: 3.720700 ms  DeleteObjects: 0.127000 ms)
 
+
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
@@ -584,15 +632,19 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoTheInside\TheInside\DEMOTheInsideV1.0\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -642,22 +694,28 @@ Unloading 39 unused Assets / (318.2 KB). Loaded Objects now: 5406.
 Memory consumption went from 171.6 MB to 171.3 MB.
 Total: 4.883700 ms (FindLiveObjects: 0.534900 ms CreateObjectMapping: 0.583200 ms MarkObjects: 3.653800 ms  DeleteObjects: 0.110500 ms)
 
+
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
+
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoTheInside\TheInside\DEMOTheInsideV1.0\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoTheInside\TheInside\DEMOTheInsideV1.0\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.832 seconds
@@ -705,20 +763,26 @@ Unloading 39 unused Assets / (318.2 KB). Loaded Objects now: 5410.
 Memory consumption went from 171.6 MB to 171.3 MB.
 Total: 5.204800 ms (FindLiveObjects: 0.446900 ms CreateObjectMapping: 0.602300 ms MarkObjects: 3.974600 ms  DeleteObjects: 0.179600 ms)
 
+
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoTheInside\TheInside\DEMOTheInsideV1.0\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -768,22 +832,28 @@ Unloading 39 unused Assets / (318.2 KB). Loaded Objects now: 5414.
 Memory consumption went from 171.7 MB to 171.3 MB.
 Total: 4.362300 ms (FindLiveObjects: 0.416900 ms CreateObjectMapping: 0.391600 ms MarkObjects: 3.428200 ms  DeleteObjects: 0.124400 ms)
 
+
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
+
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoTheInside\TheInside\DEMOTheInsideV1.0\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoTheInside\TheInside\DEMOTheInsideV1.0\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.857 seconds
@@ -831,22 +901,28 @@ Unloading 39 unused Assets / (318.2 KB). Loaded Objects now: 5418.
 Memory consumption went from 171.7 MB to 171.3 MB.
 Total: 5.586000 ms (FindLiveObjects: 0.442000 ms CreateObjectMapping: 0.422700 ms MarkObjects: 4.596800 ms  DeleteObjects: 0.123400 ms)
 
+
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
+
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoTheInside\TheInside\DEMOTheInsideV1.0\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoTheInside\TheInside\DEMOTheInsideV1.0\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.854 seconds
@@ -856,10 +932,12 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  1.303 seconds
 Domain Reload Profiling: 2157ms
 	BeginReloadAssembly (170ms)
+
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+
 		CreateAndSetChildDomain (47ms)
 	RebuildCommonClasses (45ms)
 	RebuildNativeTypeToScriptingClass (15ms)
@@ -957,10 +1035,12 @@ Unloading 39 unused Assets / (318.2 KB). Loaded Objects now: 5426.
 Memory consumption went from 171.9 MB to 171.5 MB.
 Total: 5.378700 ms (FindLiveObjects: 0.486100 ms CreateObjectMapping: 0.431900 ms MarkObjects: 4.337000 ms  DeleteObjects: 0.122300 ms)
 
+
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
@@ -1025,15 +1105,19 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoTheInside\TheInside\DEMOTheInsideV1.0\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll

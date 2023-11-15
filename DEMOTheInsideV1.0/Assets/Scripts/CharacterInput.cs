@@ -17,6 +17,13 @@ public class CharacterInput : MonoBehaviour
     public GameObject DropPos;
     public bool ItemHold;
 
+    //2nd Puzzle variables
+    public GameObject CamRC;
+    public GameObject CamMain;
+    private bool Rompiendo = false;
+    public GameObject RCpos;
+
+
     //TP Variables
     public static bool ExitBoolCI= false;
     public GameObject StartPoint;
@@ -62,6 +69,17 @@ public class CharacterInput : MonoBehaviour
             
             
         }
+
+        if (other.gameObject.tag == "RC" && Input.GetKeyDown(KeyCode.F))
+        {
+            Debug.Log("Zona RC");
+            Cursor.lockState = CursorLockMode.None;
+            CamMain.SetActive(false);
+            CamRC.SetActive(true);
+            Rompiendo = true;
+            
+        }
+        
     }
    /* private void OnTriggerEnter(Collider other)
     {
@@ -80,7 +98,13 @@ public class CharacterInput : MonoBehaviour
         Drop();
         TP();
 
-        
+        if (Rompiendo == true && Input.GetKeyDown(KeyCode.E))
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            this.transform.position = RCpos.transform.position;
+            CamMain.SetActive(true);
+            CamRC.SetActive(false);
+        }
     }
 
 
