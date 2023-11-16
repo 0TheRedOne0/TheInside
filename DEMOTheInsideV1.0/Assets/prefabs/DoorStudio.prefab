@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 2312081134405019115}
   - component: {fileID: 1308874195580298414}
   m_Layer: 0
-  m_Name: Key_9
+  m_Name: Key_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 3269201187407740034}
   - component: {fileID: 416793677991012065}
   m_Layer: 0
-  m_Name: Key_6
+  m_Name: Key_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -733,12 +733,12 @@ Transform:
   - {fileID: 3999662868723921178}
   - {fileID: 1075995514878748335}
   - {fileID: 4946502512854930681}
-  - {fileID: 543229299588482207}
   - {fileID: 3823214256330255824}
+  - {fileID: 543229299588482207}
   - {fileID: 3759372213647471796}
   - {fileID: 3539276408620398783}
-  - {fileID: 239868984657715175}
   - {fileID: 5555862813700913435}
+  - {fileID: 239868984657715175}
   - {fileID: 7670852971573389578}
   m_Father: {fileID: 261704958725602624}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -837,6 +837,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ce343ceac1154616a0d3f940ca3bbee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  password: 1357924680
+  clickSound: {fileID: 0}
+  correctSound: {fileID: 0}
+  incorrectSound: {fileID: 0}
 --- !u!1 &4294655753193793708
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,7 +1023,7 @@ GameObject:
   - component: {fileID: 3060099259191309699}
   - component: {fileID: 9172340575763915478}
   m_Layer: 0
-  m_Name: Key_10
+  m_Name: Key_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1264,7 +1268,7 @@ GameObject:
   - component: {fileID: 141571394864611444}
   - component: {fileID: 2641472848659639196}
   m_Layer: 0
-  m_Name: Key_5
+  m_Name: Key_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
