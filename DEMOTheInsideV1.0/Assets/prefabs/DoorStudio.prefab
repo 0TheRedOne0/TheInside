@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7311663695861845794}
   - component: {fileID: 7134239375390491843}
   - component: {fileID: 5863660065207505035}
+  - component: {fileID: 1640425205811348977}
   m_Layer: 0
   m_Name: Key_4
   m_TagString: Untagged
@@ -128,9 +129,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3051461208628026325}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
-        m_MethodName: CodeFunction
+        m_MethodName: 
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -140,6 +141,27 @@ MonoBehaviour:
           m_StringArgument: 4
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &1640425205811348977
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375702846153048422}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.008308993, y: 0.029433515, z: 0.029433511}
+  m_Center: {x: 0.0000009536743, y: -0.00000047683716, z: 0}
 --- !u!1 &701071460739873787
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,8 +174,9 @@ GameObject:
   - component: {fileID: 5012081781603435963}
   - component: {fileID: 8336312977091258401}
   - component: {fileID: 2312081134405019115}
+  - component: {fileID: 1308874195580298414}
   m_Layer: 0
-  m_Name: Key_9
+  m_Name: Key_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -268,9 +291,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3051461208628026325}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
-        m_MethodName: CodeFunction
+        m_MethodName: 
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -280,6 +303,27 @@ MonoBehaviour:
           m_StringArgument: 9
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &1308874195580298414
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701071460739873787}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.008308993, y: 0.029433515, z: 0.02943352}
+  m_Center: {x: 0.0000009536743, y: -0.00000047683716, z: 0}
 --- !u!1 &2372615796580835215
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,8 +336,9 @@ GameObject:
   - component: {fileID: 1491254037531199684}
   - component: {fileID: 1911257378513164466}
   - component: {fileID: 3269201187407740034}
+  - component: {fileID: 416793677991012065}
   m_Layer: 0
-  m_Name: Key_6
+  m_Name: Key_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -408,9 +453,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3051461208628026325}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
-        m_MethodName: CodeFunction
+        m_MethodName: 
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -420,6 +465,27 @@ MonoBehaviour:
           m_StringArgument: 6
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &416793677991012065
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2372615796580835215}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.008309008, y: 0.029433515, z: 0.029433515}
+  m_Center: {x: 0.0000009536743, y: -0.00000047683716, z: 0}
 --- !u!1 &2380909620497484711
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,7 +510,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2380909620497484711}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.586609, y: 1.9418793, z: 4.845356}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -463,8 +529,10 @@ GameObject:
   m_Component:
   - component: {fileID: 94253396248773033}
   - component: {fileID: 7086893912533253267}
+  - component: {fileID: 573154888741885530}
   - component: {fileID: 9193677576313091885}
   - component: {fileID: 1548700216371178962}
+  - component: {fileID: 6910813685481582077}
   m_Layer: 0
   m_Name: Key_1
   m_TagString: Untagged
@@ -495,6 +563,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2997220400563244475}
   m_Mesh: {fileID: -5597002278806442958, guid: cf98ef27b15a041faa8e28a0e8f3bc4d, type: 3}
+--- !u!114 &573154888741885530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2997220400563244475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90a040be9be41471da5a5dd79f43cbd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeypadNumber: 1
+  KeypadClicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!23 &9193677576313091885
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -581,9 +665,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3051461208628026325}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
-        m_MethodName: CodeFunction
+        m_MethodName: 
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -593,6 +677,27 @@ MonoBehaviour:
           m_StringArgument: 1
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &6910813685481582077
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2997220400563244475}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.008308993, y: 0.029433515, z: 0.029433515}
+  m_Center: {x: 0.0000009536743, y: -0.00000047683716, z: 0}
 --- !u!1 &3051461208628026325
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,23 +724,23 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3051461208628026325}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.8894514, y: 3.107, z: -0.193}
-  m_LocalScale: {x: 0.7272727, y: 0.7272727, z: 0.7272727}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.02629161, y: 0.3625449, z: -0.0062506525}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 94253396248773033}
   - {fileID: 3999662868723921178}
   - {fileID: 1075995514878748335}
   - {fileID: 4946502512854930681}
-  - {fileID: 543229299588482207}
   - {fileID: 3823214256330255824}
+  - {fileID: 543229299588482207}
   - {fileID: 3759372213647471796}
   - {fileID: 3539276408620398783}
-  - {fileID: 239868984657715175}
   - {fileID: 5555862813700913435}
+  - {fileID: 239868984657715175}
   - {fileID: 7670852971573389578}
-  m_Father: {fileID: 8003581747171256802}
+  m_Father: {fileID: 261704958725602624}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8903733216896309193
 MeshFilter:
@@ -696,6 +801,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 261704958725602624}
+  - component: {fileID: 3353832785550552146}
   m_Layer: 0
   m_Name: CandadoStudio
   m_TagString: Untagged
@@ -715,9 +821,26 @@ Transform:
   m_LocalPosition: {x: 1.8849055, y: 2.843331, z: -0.21212101}
   m_LocalScale: {x: 0.7272727, y: 0.7272727, z: 0.7272727}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 8601223289744112365}
   m_Father: {fileID: 8003581747171256802}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &3353832785550552146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3746703295029631179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ce343ceac1154616a0d3f940ca3bbee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  password: 1357924680
+  clickSound: {fileID: 0}
+  correctSound: {fileID: 0}
+  incorrectSound: {fileID: 0}
 --- !u!1 &4294655753193793708
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,7 +957,6 @@ Transform:
   m_Children:
   - {fileID: 2186858234623612415}
   - {fileID: 261704958725602624}
-  - {fileID: 8601223289744112365}
   m_Father: {fileID: 7732195041028742126}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3713020628827798967
@@ -899,8 +1021,9 @@ GameObject:
   - component: {fileID: 3196706681995888723}
   - component: {fileID: 1060986851638694729}
   - component: {fileID: 3060099259191309699}
+  - component: {fileID: 9172340575763915478}
   m_Layer: 0
-  m_Name: Key_10
+  m_Name: Key_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1015,9 +1138,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3051461208628026325}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
-        m_MethodName: CodeFunction
+        m_MethodName: 
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1027,6 +1150,27 @@ MonoBehaviour:
           m_StringArgument: 0
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &9172340575763915478
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5984009685076554871}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.008308993, y: 0.029433534, z: 0.029433515}
+  m_Center: {x: 0.0000009536743, y: -0.00000047683716, z: 0}
 --- !u!1 &6009657496074545462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,8 +1266,9 @@ GameObject:
   - component: {fileID: 7192485606273931825}
   - component: {fileID: 3165762718606830246}
   - component: {fileID: 141571394864611444}
+  - component: {fileID: 2641472848659639196}
   m_Layer: 0
-  m_Name: Key_5
+  m_Name: Key_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1238,9 +1383,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3051461208628026325}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
-        m_MethodName: CodeFunction
+        m_MethodName: 
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1250,6 +1395,27 @@ MonoBehaviour:
           m_StringArgument: 5
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &2641472848659639196
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6009664735256200416}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.008309008, y: 0.029433515, z: 0.029433511}
+  m_Center: {x: 0.0000009536743, y: -0.00000047683716, z: 0}
 --- !u!1 &6213958595267914661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,6 +1428,7 @@ GameObject:
   - component: {fileID: 2879002984150097336}
   - component: {fileID: 5096240409987039806}
   - component: {fileID: 5136593396587486403}
+  - component: {fileID: 7579480764589454642}
   m_Layer: 0
   m_Name: Key_8
   m_TagString: Untagged
@@ -1378,9 +1545,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3051461208628026325}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
-        m_MethodName: CodeFunction
+        m_MethodName: 
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1390,6 +1557,27 @@ MonoBehaviour:
           m_StringArgument: 8
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &7579480764589454642
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6213958595267914661}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.008309003, y: 0.029433515, z: 0.02943352}
+  m_Center: {x: 0.0000009536743, y: 0, z: 0}
 --- !u!1 &6850817978780813153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,6 +1590,7 @@ GameObject:
   - component: {fileID: 6809323395305006781}
   - component: {fileID: 2753301945233724095}
   - component: {fileID: 2102405666156549927}
+  - component: {fileID: 3903483271783777928}
   m_Layer: 0
   m_Name: Key_7
   m_TagString: Untagged
@@ -1518,9 +1707,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3051461208628026325}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
-        m_MethodName: CodeFunction
+        m_MethodName: 
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1530,6 +1719,27 @@ MonoBehaviour:
           m_StringArgument: 7
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &3903483271783777928
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6850817978780813153}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.008309003, y: 0.029433515, z: 0.029433515}
+  m_Center: {x: 0.0000009536743, y: 0, z: 0}
 --- !u!1 &7269729617174115266
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,6 +1752,7 @@ GameObject:
   - component: {fileID: 2874263686686423863}
   - component: {fileID: 57449640530914741}
   - component: {fileID: 2274008627818058264}
+  - component: {fileID: 3878347226071529318}
   m_Layer: 0
   m_Name: Key_2
   m_TagString: Untagged
@@ -1658,9 +1869,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3051461208628026325}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
-        m_MethodName: CodeFunction
+        m_MethodName: 
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1670,6 +1881,27 @@ MonoBehaviour:
           m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &3878347226071529318
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7269729617174115266}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.008308993, y: 0.029433515, z: 0.029433493}
+  m_Center: {x: 0.0000009536743, y: -0.00000047683716, z: 0}
 --- !u!1 &8566277297896958073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1682,6 +1914,7 @@ GameObject:
   - component: {fileID: 6281215932795164465}
   - component: {fileID: 5274740923123260716}
   - component: {fileID: 5894406675265945009}
+  - component: {fileID: 6005020124833930092}
   m_Layer: 0
   m_Name: Key_Enter
   m_TagString: Untagged
@@ -1798,6 +2031,27 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!65 &6005020124833930092
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8566277297896958073}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.011881974, y: 0.010000001, z: 0.010000003}
+  m_Center: {x: -0.00094098586, y: 0.00000023841858, z: 0}
 --- !u!1 &8585430798543827911
 GameObject:
   m_ObjectHideFlags: 0
@@ -1810,6 +2064,7 @@ GameObject:
   - component: {fileID: 2378479180542198969}
   - component: {fileID: 5784758878325053651}
   - component: {fileID: 5568230875084435405}
+  - component: {fileID: 7766729066819082286}
   m_Layer: 0
   m_Name: Key_3
   m_TagString: Untagged
@@ -1926,9 +2181,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3051461208628026325}
         m_TargetAssemblyTypeName: Password, Assembly-CSharp
-        m_MethodName: CodeFunction
+        m_MethodName: 
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1938,3 +2193,24 @@ MonoBehaviour:
           m_StringArgument: 3
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &7766729066819082286
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8585430798543827911}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.008308993, y: 0.029433515, z: 0.029433515}
+  m_Center: {x: 0.0000009536743, y: 0, z: 0}
