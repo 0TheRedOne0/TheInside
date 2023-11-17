@@ -32,6 +32,11 @@ public class CharacterInput : MonoBehaviour
     Camera cam;
     public bool Focus;
 
+    //RaycastVariables
+    [SerializeField] private Material SelectedMat;
+    [SerializeField] private Material DefaultMat;
+    private Transform selection_;
+
 
     private void Start()
     {
@@ -97,6 +102,7 @@ public class CharacterInput : MonoBehaviour
         AmbientC();
         Drop();
         TP();
+        Raycast();
 
         if (Rompiendo == true && Input.GetKeyDown(KeyCode.E))
         {
@@ -166,6 +172,39 @@ public class CharacterInput : MonoBehaviour
             //ExitBoolGM = false;
             Debug.Log("WORK1000");
         }
+    }
+
+    void Raycast()
+    {
+        if (selection_ != null)
+        {
+            var selectionRenderer = selection_.GetComponent<Renderer>();
+            selectionRenderer.material = DefaultMat;
+            selection_ = null;
+        }
+
+        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
+        {
+            var selection = hit.transform;
+            if (selection.CompareTag("C")|| selection.CompareTag("Tile"))
+            {
+                var selectionRenderer = selection.GetComponent<Renderer>();
+                if (selectionRenderer != null)
+                {
+                    DefaultMat = selectionRenderer.material;
+                    selectionRenderer.material = SelectedMat;
+                }
+                selection_ = selection;
+
+            }
+
+
+            if (selection.CompareTag("C"))
+        }
+
+       
     }
 
     IEnumerator ReCam()
