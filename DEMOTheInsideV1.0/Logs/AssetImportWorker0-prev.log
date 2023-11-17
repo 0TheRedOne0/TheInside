@@ -15,9 +15,12 @@ D:/trabajos/RepoTheInside/TheInside/DEMOTheInsideV1.0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+
+63609
 49678
 Successfully changed project path to: D:/trabajos/RepoTheInside/TheInside/DEMOTheInsideV1.0
 D:/trabajos/RepoTheInside/TheInside/DEMOTheInsideV1.0
+
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,9 +52,13 @@ D:/trabajos/RepoTheInside/TheInside/DEMOTheInsideV1.0
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+
+Player connection [3700] Host "[IP] 192.168.0.3 [Port] 0 [Flags] 2 [Guid] 3560960317 [EditorId] 3560960317 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ND7A2RD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 Player connection [13960] Host "[IP] 192.168.0.3 [Port] 0 [Flags] 2 [Guid] 1110524321 [EditorId] 1110524321 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ND7A2RD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [13960] Host "[IP] 192.168.0.3 [Port] 0 [Flags] 2 [Guid] 1110524321 [EditorId] 1110524321 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ND7A2RD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 14.05 ms, found 3 plugins.
 
 Refreshing native plugins compatible for Editor in 10.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -66,6 +73,7 @@ Direct3D:
     VRAM:     4019 MB
     Driver:   30.0.14.9733
 Initialize mono
+
 Mono path[0] = 'D:/Unity/2022.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2022.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/2022.3.5f1/Editor/Data/MonoBleedingEdge/etc'
@@ -77,13 +85,14 @@ Registered in 0.005657 seconds.
 - Loaded All Assemblies, in  0.439 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.362 seconds
-Domain Reload Profiling: 800ms
-	BeginReloadAssembly (111ms)
+- Finished resetting the current domain, in  0.410 seconds
+Domain Reload Profiling: 869ms
+	BeginReloadAssembly (120ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+
 		CreateAndSetChildDomain (1ms)
 	RebuildCommonClasses (53ms)
 	RebuildNativeTypeToScriptingClass (15ms)
@@ -104,13 +113,14 @@ Domain Reload Profiling: 800ms
 			InitializePlatformSupportModulesInManaged (12ms)
 			SetLoadedEditorAssemblies (11ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (187ms)
-			ProcessInitializeOnLoadMethodAttributes (66ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (218ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
+
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
