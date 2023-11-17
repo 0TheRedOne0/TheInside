@@ -17,6 +17,7 @@ TagManager:
   - P8
   - P9
   - K
+  - Tile
   layers:
   - Default
   - TransparentFX
