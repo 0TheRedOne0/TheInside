@@ -202,6 +202,9 @@ public class CharacterInput : MonoBehaviour
 
 
             if (selection.CompareTag("C"))
+            { 
+            
+            }
         }
 
        
