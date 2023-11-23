@@ -13,6 +13,7 @@ public class CharacterInput : MonoBehaviour
 
     //1st Puzzle variables
     public GameObject Inventory;
+    public GameObject InventoryT;
     public GameObject ActualPic;
     public GameObject DropPos;
     public bool ItemHold;
@@ -41,6 +42,7 @@ public class CharacterInput : MonoBehaviour
     private void Start()
     {
         Inventory = GameObject.Find("Inventory");
+        InventoryT= GameObject.Find("InventoryT");
         DropPos = GameObject.Find("DropPos");
         StartPoint = GameObject.Find("StartPoint");
         cam = Camera.main;
@@ -188,7 +190,7 @@ public class CharacterInput : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             var selection = hit.transform;
-            if (selection.CompareTag("C")|| selection.CompareTag("Tile"))
+            if (selection.CompareTag("C")|| selection.CompareTag("Tile") || selection.CompareTag("Bag"))
             {
                 var selectionRenderer = selection.GetComponent<Renderer>();
                 if (selectionRenderer != null)
@@ -201,14 +203,31 @@ public class CharacterInput : MonoBehaviour
             }
 
 
-            if (selection.CompareTag("C"))
-            { 
-            
+            if (selection.CompareTag("C")&& Input.GetKeyDown(KeyCode.F))
+            {
+                ActualPic =selection.gameObject;
+                ItemHold = true;
+                ActualPic.transform.position = Inventory.transform.position;
+            }
+            if (selection.CompareTag("Tile") && Input.GetKeyDown(KeyCode.F))
+            {
+                ActualPic = selection.gameObject;
+                ItemHold = true;
+                ActualPic.transform.position = InventoryT.transform.position;
+            }
+            if (selection.CompareTag("Bag") && Input.GetKeyDown(KeyCode.F))
+            {
+                ActualPic = selection.gameObject;
+                ItemHold = true;
+                ActualPic.transform.position = InventoryT.transform.position;
             }
         }
+    }
+
+
 
        
-    }
+    
 
     IEnumerator ReCam()
     {

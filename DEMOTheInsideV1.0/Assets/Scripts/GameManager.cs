@@ -42,6 +42,11 @@ public class GameManager : MonoBehaviour
     public float timerHrs= 00f;
     public bool am = true;
 
+    //Variables de Interfaz
+    public bool firstTut = true;
+    public GameObject WASD;
+
+
     void Start()
     {
         //Sala
@@ -59,8 +64,9 @@ public class GameManager : MonoBehaviour
         StartPoint = GameObject.Find("StartPoint");
         Exit = GameObject.Find("Exit");
 
-        //Timer
-       
+        //Interfaz
+        firstTut = true;
+        StartCoroutine(waitWASD());
 
 
     }
@@ -71,6 +77,11 @@ public class GameManager : MonoBehaviour
         Psala();
         Timer();
         Rompechoya();
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            firstTut = false;
+        }
     }
 
     void Psala()
@@ -125,6 +136,21 @@ public class GameManager : MonoBehaviour
         
     }
 
+    IEnumerator waitWASD()
+    {
+
+
+        if (firstTut == true)
+        {
+            WASD.SetActive(true);
+            yield return new WaitForSeconds(30f);
+            WASD.SetActive(false);
+        }
+        else if (firstTut == false)
+        {
+            WASD.SetActive(false);
+        }
+    }
     void Rompechoya()
     {
         if (Puzzle >= 9)
