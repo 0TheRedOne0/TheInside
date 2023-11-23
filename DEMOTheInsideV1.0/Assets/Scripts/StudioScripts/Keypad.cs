@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Keypad : MonoBehaviour
 {
-    public string password = "1357924680";
+    [SerializeField ]private Animator Anim;
+
+    public string password = "1234567890";
     private string userInput = "";
 
     public AudioClip clickSound;
@@ -16,6 +18,7 @@ public class Keypad : MonoBehaviour
     {
         userInput = "";
         audioSource = GetComponent<AudioSource>();
+        //Anim = GetComponentInChildren<Animator>();
     }
     public void ButtonClicked(string number)
     {
@@ -28,6 +31,7 @@ public class Keypad : MonoBehaviour
             {
                 //Sound correct and open door
                 Debug.Log("Entry Allowed");
+                Anim.SetTrigger("DoorOpen");
                 audioSource.PlayOneShot(correctSound);
             }
             else
