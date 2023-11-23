@@ -18,6 +18,7 @@ TagManager:
   - P9
   - RC
   - Tile
+  - Bag
   layers:
   - Default
   - TransparentFX

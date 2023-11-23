@@ -42,6 +42,11 @@ public class GameManager : MonoBehaviour
     public float timerHrs= 00f;
     public bool am = true;
 
+    //Variables de Interfaz
+    public bool firstTut = true;
+    public GameObject WASD;
+
+
     void Start()
     {
         //Sala
@@ -59,8 +64,9 @@ public class GameManager : MonoBehaviour
         StartPoint = GameObject.Find("StartPoint");
         Exit = GameObject.Find("Exit");
 
-        //Timer
-       
+        //Interfaz
+        
+        StartCoroutine(waitWASD());
 
 
     }
@@ -125,6 +131,19 @@ public class GameManager : MonoBehaviour
         
     }
 
+    IEnumerator waitWASD()
+    {
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            firstTut = false;
+        }
+        if (firstTut == true) ;
+        yield return new WaitForSeconds(1f);
+        WASD.SetActive(true);
+        yield return new WaitForSeconds(30f);
+        WASD.SetActive(false);
+       
+    }
     void Rompechoya()
     {
         if (Puzzle >= 9)
