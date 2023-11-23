@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
         Exit = GameObject.Find("Exit");
 
         //Interfaz
-        
+        firstTut = true;
         StartCoroutine(waitWASD());
 
 
@@ -77,6 +77,11 @@ public class GameManager : MonoBehaviour
         Psala();
         Timer();
         Rompechoya();
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            firstTut = false;
+        }
     }
 
     void Psala()
@@ -133,16 +138,18 @@ public class GameManager : MonoBehaviour
 
     IEnumerator waitWASD()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+
+
+        if (firstTut == true)
         {
-            firstTut = false;
+            WASD.SetActive(true);
+            yield return new WaitForSeconds(30f);
+            WASD.SetActive(false);
         }
-        if (firstTut == true) ;
-        yield return new WaitForSeconds(1f);
-        WASD.SetActive(true);
-        yield return new WaitForSeconds(30f);
-        WASD.SetActive(false);
-       
+        else if (firstTut == false)
+        {
+            WASD.SetActive(false);
+        }
     }
     void Rompechoya()
     {
