@@ -190,7 +190,7 @@ public class CharacterInput : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             var selection = hit.transform;
-            if (selection.CompareTag("C")|| selection.CompareTag("Tile") || selection.CompareTag("Bag"))
+            if (selection.CompareTag("C")|| selection.CompareTag("Tile") || selection.CompareTag("Bag")|| selection.CompareTag("Boton"))
             {
                 var selectionRenderer = selection.GetComponent<Renderer>();
                 if (selectionRenderer != null)

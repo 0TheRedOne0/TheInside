@@ -19,6 +19,7 @@ TagManager:
   - RC
   - Tile
   - Bag
+  - Boton
   layers:
   - Default
   - TransparentFX

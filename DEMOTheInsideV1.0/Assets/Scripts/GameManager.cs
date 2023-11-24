@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject StartPoint;
     public GameObject Exit;
    
-    public bool firstLoop = false;
+   
 
 
     //Invntory Pos
@@ -43,8 +43,16 @@ public class GameManager : MonoBehaviour
     public bool am = true;
 
     //Variables de Interfaz
-    public bool firstTut = true;
+    public bool firstTut;
+    private bool Control;
     public GameObject WASD;
+
+    //Loops
+    public bool firstLoop = false;
+    public bool secondLoop = false;
+    public bool thirdLoop = false;
+    public bool fourthLoop = false;
+    public bool fitfthLoop = false;
 
 
     void Start()
@@ -78,9 +86,15 @@ public class GameManager : MonoBehaviour
         Timer();
         Rompechoya();
 
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Control == true &&Input.GetKeyDown(KeyCode.C))
         {
+            StopCoroutine(waitWASD());
             firstTut = false;
+        }
+        else if (firstTut==false &&Input.GetKeyDown(KeyCode.C))
+        {
+            Debug.Log("is pressed");
+            WASD.SetActive(true);
         }
     }
 
@@ -138,18 +152,16 @@ public class GameManager : MonoBehaviour
 
     IEnumerator waitWASD()
     {
-
+        Control = true;
 
         if (firstTut == true)
         {
             WASD.SetActive(true);
-            yield return new WaitForSeconds(30f);
+            yield return new WaitForSeconds(12f);
             WASD.SetActive(false);
+            firstTut = false;
         }
-        else if (firstTut == false)
-        {
-            WASD.SetActive(false);
-        }
+        Control = false;
     }
     void Rompechoya()
     {
