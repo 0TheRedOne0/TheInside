@@ -11,6 +11,8 @@ public class CharacterInput : MonoBehaviour
     //Inside/Outside Varibles
     public bool Inside = false;
     public Material OutsidetMat;
+    public GameObject GVOut;
+    public GameObject GVIn;
 
     //1st Puzzle variables
     public GameObject Inventory;
@@ -135,6 +137,8 @@ public class CharacterInput : MonoBehaviour
             Debug.Log(" Inside");
             Inside = true;
             OutsidetMat.SetFloat("_Inside", 1);
+            GVOut.SetActive(false);
+            GVIn.SetActive(true);
 
         }
      else if(Inside == true && Input.GetKeyDown(KeyCode.Tab))
@@ -142,6 +146,8 @@ public class CharacterInput : MonoBehaviour
             Debug.Log("Cambio de perspectiva al Outside");
             Inside = false;
             OutsidetMat.SetFloat("_Inside", 0);
+            GVOut.SetActive(true);
+            GVIn.SetActive(false);
         }
 
     }
