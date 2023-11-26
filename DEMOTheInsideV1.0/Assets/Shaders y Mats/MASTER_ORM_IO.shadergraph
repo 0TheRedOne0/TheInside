@@ -65,6 +65,9 @@
         },
         {
             "m_Id": "f2664ac32b4c4120894cdc233af8b00f"
+        },
+        {
+            "m_Id": "7a0e942a1fe147d7a6b152b3b265e974"
         }
     ],
     "m_Keywords": [],
@@ -274,9 +277,6 @@
             "m_Id": "bf80abefa6d5476a9213de0ea55b3c71"
         },
         {
-            "m_Id": "d73c702921bb4307859d19f5c70bc9a8"
-        },
-        {
             "m_Id": "a6dcfd9e38dd4729828b9ff92f1563ec"
         },
         {
@@ -314,6 +314,9 @@
         },
         {
             "m_Id": "9f340f1b17b5426c95a3e3f488079b57"
+        },
+        {
+            "m_Id": "9a123a907be4415187a8fcbce6ce034d"
         }
     ],
     "m_GroupDatas": [
@@ -901,6 +904,20 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "9a123a907be4415187a8fcbce6ce034d"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "bf80abefa6d5476a9213de0ea55b3c71"
+                },
+                "m_SlotId": 1
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "9f340f1b17b5426c95a3e3f488079b57"
                 },
                 "m_SlotId": 2
@@ -1090,20 +1107,6 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "0ac104101dc94933afbc651538e30800"
-                },
-                "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "d73c702921bb4307859d19f5c70bc9a8"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "bf80abefa6d5476a9213de0ea55b3c71"
                 },
                 "m_SlotId": 1
             }
@@ -1468,10 +1471,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -652.0,
-            "y": -544.0,
-            "width": 114.0,
-            "height": 34.0
+            "x": -696.7999877929688,
+            "y": -478.39996337890627,
+            "width": 113.5999755859375,
+            "height": 33.600006103515628
         }
     },
     "m_Slots": [
@@ -1888,8 +1891,8 @@
     "m_ObjectId": "12f3193c0e4d48db8c7ae0f664e153df",
     "m_Title": "Base Color Inside",
     "m_Position": {
-        "x": -2798.0,
-        "y": -1050.0
+        "x": -2798.400146484375,
+        "y": -1051.199951171875
     }
 }
 
@@ -3331,6 +3334,9 @@
         },
         {
             "m_Id": "672dab4ab8ed4b51a45dbf10c5a850d4"
+        },
+        {
+            "m_Id": "7a0e942a1fe147d7a6b152b3b265e974"
         }
     ]
 }
@@ -4648,6 +4654,36 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty",
+    "m_ObjectId": "7a0e942a1fe147d7a6b152b3b265e974",
+    "m_Guid": {
+        "m_GuidSerialized": "2a6757bc-f2ba-4141-8437-1bea957de04d"
+    },
+    "m_Name": "InsideColorTexture",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "InsideColorTexture",
+    "m_DefaultReferenceName": "_InsideColorTexture",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": {
+        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_Guid": ""
+    },
+    "isMainTexture": false,
+    "useTilingAndOffset": false,
+    "m_Modifiable": true,
+    "m_DefaultType": 0
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "7a4c7cb669944242856b737338b0bb0c",
     "m_Id": 3,
@@ -5706,6 +5742,42 @@
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "9a123a907be4415187a8fcbce6ce034d",
+    "m_Group": {
+        "m_Id": "12f3193c0e4d48db8c7ae0f664e153df"
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -2737.60009765625,
+            "y": -888.0,
+            "width": 183.199951171875,
+            "height": 33.5999755859375
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "cceb8314d8744325bae7b91182ddcfcc"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "7a0e942a1fe147d7a6b152b3b265e974"
     }
 }
 
@@ -7110,6 +7182,19 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
+    "m_ObjectId": "cceb8314d8744325bae7b91182ddcfcc",
+    "m_Id": 0,
+    "m_DisplayName": "InsideColorTexture",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_BareResource": false
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "ccf9a604b28c4a7c9eab243345fdf39c",
     "m_Id": 0,
@@ -7368,55 +7453,6 @@
     "m_Property": {
         "m_Id": "9ca1d8d140dd474b9816aa2c1d22b623"
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
-    "m_ObjectId": "d73c702921bb4307859d19f5c70bc9a8",
-    "m_Group": {
-        "m_Id": "12f3193c0e4d48db8c7ae0f664e153df"
-    },
-    "m_Name": "Property",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -2773.0,
-            "y": -936.0,
-            "width": 184.0,
-            "height": 34.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "d79bf3bf0ead46b0939a036870fa4261"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_DismissedVersion": 0,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_Property": {
-        "m_Id": "ca0020d93d814d39b7700383319664e2"
-    }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
-    "m_ObjectId": "d79bf3bf0ead46b0939a036870fa4261",
-    "m_Id": 0,
-    "m_DisplayName": "Base Color Texture",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_BareResource": false
 }
 
 {

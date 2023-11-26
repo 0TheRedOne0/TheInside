@@ -10,6 +10,7 @@ public class CharacterInput : MonoBehaviour
 
     //Inside/Outside Varibles
     public bool Inside = false;
+    public Material OutsidetMat;
 
     //1st Puzzle variables
     public GameObject Inventory;
@@ -26,7 +27,7 @@ public class CharacterInput : MonoBehaviour
 
 
     //TP Variables
-    public static bool ExitBoolCI= false;
+    public static bool ExitBoolCI = false;
     public GameObject StartPoint;
 
     //FousVariables
@@ -36,7 +37,9 @@ public class CharacterInput : MonoBehaviour
     //RaycastVariables
     [SerializeField] private Material SelectedMat;
     [SerializeField] private Material DefaultMat;
-    private Transform selection_;
+    private Transform selection_; 
+
+    
 
 
     private void Start()
@@ -126,17 +129,19 @@ public class CharacterInput : MonoBehaviour
 
     void AmbientC()
     {
-     if (Inside = false && Input.GetKeyDown(KeyCode.Tab))
+     if (Inside == false && Input.GetKeyDown(KeyCode.Tab))
         {
 
             Debug.Log(" Inside");
             Inside = true;
+            OutsidetMat.SetFloat("_Inside", 1);
 
         }
-     else if(Inside = true && Input.GetKeyDown(KeyCode.Tab))
+     else if(Inside == true && Input.GetKeyDown(KeyCode.Tab))
         {
             Debug.Log("Cambio de perspectiva al Outside");
             Inside = false;
+            OutsidetMat.SetFloat("_Inside", 0);
         }
 
     }
