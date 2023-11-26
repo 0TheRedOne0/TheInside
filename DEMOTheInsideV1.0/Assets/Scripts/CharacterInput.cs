@@ -10,6 +10,8 @@ public class CharacterInput : MonoBehaviour
 
     //Inside/Outside Varibles
     public bool Inside = false;
+    public GameObject GVOut;
+    public GameObject GVIn;
 
     //1st Puzzle variables
     public GameObject Inventory;
@@ -122,21 +124,25 @@ public class CharacterInput : MonoBehaviour
         
     }*/
 
-   
+
 
     void AmbientC()
     {
-     if (Inside = false && Input.GetKeyDown(KeyCode.Tab))
+        if (Inside == false && Input.GetKeyDown(KeyCode.Tab))
         {
 
             Debug.Log(" Inside");
             Inside = true;
+            GVIn.SetActive(true);
+            GVOut.SetActive(false);
 
         }
-     else if(Inside = true && Input.GetKeyDown(KeyCode.Tab))
+        else if (Inside == true && Input.GetKeyDown(KeyCode.Tab))
         {
             Debug.Log("Cambio de perspectiva al Outside");
             Inside = false;
+            GVIn.SetActive(false);
+            GVOut.SetActive(true);
         }
 
     }

@@ -16828,6 +16828,8 @@ MonoBehaviour:
   controller: {fileID: 1030808655}
   speed: 16
   Inside: 0
+  GVOut: {fileID: 0}
+  GVIn: {fileID: 0}
   Inventory: {fileID: 0}
   InventoryT: {fileID: 0}
   ActualPic: {fileID: 0}
