@@ -54,9 +54,24 @@ public class GameManager : MonoBehaviour
     public bool fourthLoop = false;
     public bool fitfthLoop = false;
 
+    public GameObject ESCloop1;
+    public GameObject ESCloop2;
+    public GameObject ESCloop3;
+    public GameObject ESCloop4;
+    public GameObject ESCloop5;
+    public GameObject BlockBath;
+    public GameObject BlockKitchen;
+    public GameObject BlockStudio;
+    public GameObject BlockRoom;
+    public GameObject BlockLiving;
+
+
+
 
     void Start()
     {
+        
+
         //Sala
         C1 = GameObject.Find("C1");
         C2 = GameObject.Find("C2");
@@ -85,6 +100,7 @@ public class GameManager : MonoBehaviour
         Psala();
         Timer();
         Rompechoya();
+        loopManager();
 
         if (Control == true &&Input.GetKeyDown(KeyCode.C))
         {
@@ -176,5 +192,36 @@ public class GameManager : MonoBehaviour
             camMain.SetActive(true);
         }
     }
+    void loopManager()
+    {
+        if ( firstLoop == true)
+        {
+            ESCloop1.SetActive(true);
+            BlockRoom.SetActive(false);
+        }
+        if (secondLoop == true)
+        {
+            ESCloop2.SetActive(true);
+            BlockLiving.SetActive(false);
+        }
+        if (thirdLoop == true)
+        {
+            ESCloop3.SetActive(true);
+            BlockKitchen.SetActive(false);
+        }
+        if (fourthLoop == true)
+        {
+            ESCloop4.SetActive(true);
+            BlockBath.SetActive(false);
+        }
+        if (fitfthLoop == true)
+        {
+            ESCloop5.SetActive(true);
+            BlockStudio.SetActive(false);
+        }
+        
+       
+    }
+
 
 }
