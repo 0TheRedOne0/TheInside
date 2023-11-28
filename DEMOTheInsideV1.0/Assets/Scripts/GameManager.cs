@@ -11,8 +11,8 @@ public class GameManager : MonoBehaviour
     public GameObject StartPoint;
     public GameObject Exit;
    
-   
-
+   //MonsterVariables
+   public CharacterInput Inside;
 
     //Invntory Pos
     public GameObject Inventory;
@@ -101,15 +101,22 @@ public class GameManager : MonoBehaviour
         Timer();
         Rompechoya();
         loopManager();
+        UIcontrol();
 
-        if (Control == true &&Input.GetKeyDown(KeyCode.C))
+
+
+    }
+
+    void UIcontrol()
+    {
+        if (Control == true && Input.GetKeyDown(KeyCode.C))
         {
             StopCoroutine(waitWASD());
             firstTut = false;
         }
-        else if (firstTut==false &&Input.GetKeyDown(KeyCode.C))
+        else if (firstTut == false && Input.GetKeyDown(KeyCode.C))
         {
-            Debug.Log("is pressed");
+
             WASD.SetActive(true);
         }
     }
