@@ -837,6 +837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ce343ceac1154616a0d3f940ca3bbee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Anim: {fileID: 0}
   password: 1357924680
   clickSound: {fileID: 0}
   correctSound: {fileID: 0}
@@ -869,7 +870,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.5444365, y: -1.9569169, z: 0.023386002}
-  m_LocalScale: {x: 0.66, y: 0.66, z: 0.66}
+  m_LocalScale: {x: 0.7, y: 0.66, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7732195041028742126}
@@ -951,8 +952,8 @@ Transform:
   m_GameObject: {fileID: 4389269795780266957}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2766399, y: -1.941485, z: 0.022644043}
-  m_LocalScale: {x: 0.66, y: 0.66, z: 0.66}
+  m_LocalPosition: {x: -1.2665, y: -1.941485, z: 0.022644043}
+  m_LocalScale: {x: 0.7, y: 0.66, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2186858234623612415}
