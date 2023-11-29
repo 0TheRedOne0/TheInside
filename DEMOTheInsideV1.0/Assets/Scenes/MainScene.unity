@@ -1396,40 +1396,6 @@ Transform:
   - {fileID: 1666644097}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &51978638 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6009664735256200416, guid: 96ebe9547d0424328ad8c31bb13654f1,
-    type: 3}
-  m_PrefabInstance: {fileID: 400961498790517197}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &51978644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 51978638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90a040be9be41471da5a5dd79f43cbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeypadNumber: 1
-  KeypadClicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1269222683}
-        m_TargetAssemblyTypeName: Keypad, Assembly-CSharp
-        m_MethodName: ButtonClicked
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
-          m_FloatArgument: 0
-          m_StringArgument: 6
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!4 &52166184 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7851237336953516436, guid: 220b131a7fc952142a8096ec27b3a502,
@@ -5915,40 +5881,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1116817208}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &328058915 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 375702846153048422, guid: 96ebe9547d0424328ad8c31bb13654f1,
-    type: 3}
-  m_PrefabInstance: {fileID: 400961498790517197}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &328058921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 328058915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90a040be9be41471da5a5dd79f43cbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeypadNumber: 1
-  KeypadClicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1269222683}
-        m_TargetAssemblyTypeName: Keypad, Assembly-CSharp
-        m_MethodName: ButtonClicked
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
-          m_FloatArgument: 0
-          m_StringArgument: 4
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &329175434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11163,40 +11095,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 583083418}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &584099225 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 701071460739873787, guid: 96ebe9547d0424328ad8c31bb13654f1,
-    type: 3}
-  m_PrefabInstance: {fileID: 400961498790517197}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &584099231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584099225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90a040be9be41471da5a5dd79f43cbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeypadNumber: 0
-  KeypadClicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1269222683}
-        m_TargetAssemblyTypeName: Keypad, Assembly-CSharp
-        m_MethodName: ButtonClicked
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 9
-          m_FloatArgument: 0
-          m_StringArgument: 0
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &584850888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11792,84 +11690,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1213367781}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &616735970 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2372615796580835215, guid: 96ebe9547d0424328ad8c31bb13654f1,
-    type: 3}
-  m_PrefabInstance: {fileID: 400961498790517197}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &616735976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 616735970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90a040be9be41471da5a5dd79f43cbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeypadNumber: 1
-  KeypadClicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1269222683}
-        m_TargetAssemblyTypeName: Keypad, Assembly-CSharp
-        m_MethodName: ButtonClicked
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 6
-          m_FloatArgument: 0
-          m_StringArgument: 5
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!4 &623633281 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7851237336953516436, guid: 220b131a7fc952142a8096ec27b3a502,
     type: 3}
   m_PrefabInstance: {fileID: 1898253234}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &631590614 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8566277297896958073, guid: 96ebe9547d0424328ad8c31bb13654f1,
-    type: 3}
-  m_PrefabInstance: {fileID: 400961498790517197}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &631590620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631590614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90a040be9be41471da5a5dd79f43cbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeypadNumber: 1
-  KeypadClicked:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &631590621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631590614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90a040be9be41471da5a5dd79f43cbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeypadNumber: 1
-  KeypadClicked:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &632506127 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7851237336953516436, guid: 220b131a7fc952142a8096ec27b3a502,
@@ -25697,120 +25523,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 220b131a7fc952142a8096ec27b3a502, type: 3}
---- !u!1 &1269222681 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3746703295029631179, guid: 96ebe9547d0424328ad8c31bb13654f1,
-    type: 3}
-  m_PrefabInstance: {fileID: 400961498790517197}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1269222683 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3353832785550552146, guid: 96ebe9547d0424328ad8c31bb13654f1,
-    type: 3}
-  m_PrefabInstance: {fileID: 400961498790517197}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269222681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ce343ceac1154616a0d3f940ca3bbee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!82 &1269222685
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269222681}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1001 &1273616759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31206,40 +30918,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559010373}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1559096170 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7269729617174115266, guid: 96ebe9547d0424328ad8c31bb13654f1,
-    type: 3}
-  m_PrefabInstance: {fileID: 400961498790517197}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1559096176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559096170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90a040be9be41471da5a5dd79f43cbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeypadNumber: 2
-  KeypadClicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1269222683}
-        m_TargetAssemblyTypeName: Keypad, Assembly-CSharp
-        m_MethodName: ButtonClicked
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 2
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1560691368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36573,40 +36251,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1428189993}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1840883595 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8585430798543827911, guid: 96ebe9547d0424328ad8c31bb13654f1,
-    type: 3}
-  m_PrefabInstance: {fileID: 400961498790517197}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1840883601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1840883595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90a040be9be41471da5a5dd79f43cbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeypadNumber: 1
-  KeypadClicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1269222683}
-        m_TargetAssemblyTypeName: Keypad, Assembly-CSharp
-        m_MethodName: ButtonClicked
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
-          m_FloatArgument: 0
-          m_StringArgument: 3
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!4 &1841727708 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7851237336953516436, guid: 220b131a7fc952142a8096ec27b3a502,
@@ -37066,40 +36710,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1869473215}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1872232076 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5984009685076554871, guid: 96ebe9547d0424328ad8c31bb13654f1,
-    type: 3}
-  m_PrefabInstance: {fileID: 400961498790517197}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1872232082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872232076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90a040be9be41471da5a5dd79f43cbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeypadNumber: 1
-  KeypadClicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1269222683}
-        m_TargetAssemblyTypeName: Keypad, Assembly-CSharp
-        m_MethodName: ButtonClicked
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 9
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1874878423
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38863,40 +38473,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 23881530}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1953585022 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6850817978780813153, guid: 96ebe9547d0424328ad8c31bb13654f1,
-    type: 3}
-  m_PrefabInstance: {fileID: 400961498790517197}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1953585028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1953585022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90a040be9be41471da5a5dd79f43cbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeypadNumber: 1
-  KeypadClicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1269222683}
-        m_TargetAssemblyTypeName: Keypad, Assembly-CSharp
-        m_MethodName: ButtonClicked
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 7
-          m_FloatArgument: 0
-          m_StringArgument: 7
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!4 &1956855290 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3bf9e380110dd594ebc4e8890df7a576,
@@ -40153,40 +39729,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 220b131a7fc952142a8096ec27b3a502, type: 3}
---- !u!1 &2066572595 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6213958595267914661, guid: 96ebe9547d0424328ad8c31bb13654f1,
-    type: 3}
-  m_PrefabInstance: {fileID: 400961498790517197}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2066572601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066572595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90a040be9be41471da5a5dd79f43cbd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeypadNumber: 1
-  KeypadClicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1269222683}
-        m_TargetAssemblyTypeName: Keypad, Assembly-CSharp
-        m_MethodName: ButtonClicked
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 8
-          m_FloatArgument: 0
-          m_StringArgument: 8
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &2069188438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41230,96 +40772,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 929064789}
     m_Modifications:
-    - target: {fileID: 573154888741885530, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      propertyPath: KeypadClicked.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 573154888741885530, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      propertyPath: KeypadClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 573154888741885530, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      propertyPath: KeypadClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1269222683}
-    - target: {fileID: 573154888741885530, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      propertyPath: KeypadClicked.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 573154888741885530, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      propertyPath: KeypadClicked.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ButtonClicked
-      objectReference: {fileID: 0}
-    - target: {fileID: 573154888741885530, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      propertyPath: KeypadClicked.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Keypad, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 573154888741885530, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      propertyPath: KeypadClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 573154888741885530, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      propertyPath: KeypadClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 573154888741885530, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      propertyPath: KeypadClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1548700216371178962, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1548700216371178962, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1269222681}
     - target: {fileID: 2380909620497484711, guid: 96ebe9547d0424328ad8c31bb13654f1,
         type: 3}
       propertyPath: m_Name
       value: DoorStudio
       objectReference: {fileID: 0}
-    - target: {fileID: 2380909620497484711, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3353832785550552146, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      propertyPath: Anim
-      value: 
-      objectReference: {fileID: 400961498790517199}
-    - target: {fileID: 3353832785550552146, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      propertyPath: password
-      value: 1234567890
-      objectReference: {fileID: 0}
-    - target: {fileID: 3353832785550552146, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      propertyPath: clickSound
-      value: 
-      objectReference: {fileID: 8300000, guid: db7a08a300e9e47e49a6299835159dd1, type: 3}
-    - target: {fileID: 3353832785550552146, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      propertyPath: correctSound
-      value: 
-      objectReference: {fileID: 8300000, guid: db8c81e1d49f54823acf2d60aafb4b77, type: 3}
-    - target: {fileID: 3353832785550552146, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      propertyPath: incorrectSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 800198dc7ec704c229a86cd88dee57ec, type: 3}
     - target: {fileID: 7732195041028742126, guid: 96ebe9547d0424328ad8c31bb13654f1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -41373,87 +40830,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4389269795780266957, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 400961498790517199}
-    - targetCorrespondingSourceObject: {fileID: 3746703295029631179, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1269222685}
-    - targetCorrespondingSourceObject: {fileID: 7269729617174115266, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 1559096176}
-    - targetCorrespondingSourceObject: {fileID: 8585430798543827911, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 1840883601}
-    - targetCorrespondingSourceObject: {fileID: 375702846153048422, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 328058921}
-    - targetCorrespondingSourceObject: {fileID: 2372615796580835215, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 616735976}
-    - targetCorrespondingSourceObject: {fileID: 6009664735256200416, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 51978644}
-    - targetCorrespondingSourceObject: {fileID: 6850817978780813153, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 1953585028}
-    - targetCorrespondingSourceObject: {fileID: 6213958595267914661, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 2066572601}
-    - targetCorrespondingSourceObject: {fileID: 5984009685076554871, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 1872232082}
-    - targetCorrespondingSourceObject: {fileID: 701071460739873787, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 584099231}
-    - targetCorrespondingSourceObject: {fileID: 8566277297896958073, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 631590621}
-    - targetCorrespondingSourceObject: {fileID: 8566277297896958073, guid: 96ebe9547d0424328ad8c31bb13654f1,
-        type: 3}
-      insertIndex: 4
-      addedObject: {fileID: 631590620}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96ebe9547d0424328ad8c31bb13654f1, type: 3}
---- !u!1 &400961498790517198 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4389269795780266957, guid: 96ebe9547d0424328ad8c31bb13654f1,
-    type: 3}
-  m_PrefabInstance: {fileID: 400961498790517197}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &400961498790517199
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400961498790517198}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6487fa3aac5144923b87f36becf1ec63, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
