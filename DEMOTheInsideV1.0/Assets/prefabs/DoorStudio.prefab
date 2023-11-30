@@ -495,6 +495,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7732195041028742126}
+  - component: {fileID: 6375295588364099274}
   m_Layer: 0
   m_Name: DoorStudio
   m_TagString: Untagged
@@ -519,6 +520,27 @@ Transform:
   - {fileID: 8003581747171256802}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6375295588364099274
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2380909620497484711}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.0487423, y: 3.7243023, z: 0.14154339}
+  m_Center: {x: -0.52437115, y: -0.001311779, z: 0.024205685}
 --- !u!1 &2997220400563244475
 GameObject:
   m_ObjectHideFlags: 0

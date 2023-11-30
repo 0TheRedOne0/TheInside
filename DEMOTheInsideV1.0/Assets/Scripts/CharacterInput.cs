@@ -228,6 +228,7 @@ public class CharacterInput : MonoBehaviour
             }
             if (selection.CompareTag("Bag") && Input.GetKeyDown(KeyCode.F))
             {
+                Debug.Log("ispressing");
                 ActualPic = selection.gameObject;
                 ItemHold = true;
                 ActualPic.transform.position = InventoryT.transform.position;
