@@ -829,9 +829,12 @@ MonoBehaviour:
   CamMain: {fileID: 0}
   RCpos: {fileID: 0}
   StartPoint: {fileID: 0}
+  cam2: {fileID: 0}
+  cam3: {fileID: 0}
   Focus: 0
   SelectedMat: {fileID: 0}
   DefaultMat: {fileID: 0}
+  OpenDoor: 0
 --- !u!4 &379673485
 Transform:
   m_ObjectHideFlags: 0
@@ -2721,6 +2724,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348016970}
   m_CullTransparentMesh: 1
+--- !u!1 &1748667224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1748667226}
+  - component: {fileID: 1748667225}
+  m_Layer: 0
+  m_Name: Decal Projector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1748667225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748667224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19d9143a39eb3b46bc4563e9889cfbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 681cf37c2d91d5141bb70ef05c6612e3, type: 2}
+  m_DrawDistance: 1000
+  m_FadeScale: 0.68
+  m_StartAngleFade: 180
+  m_EndAngleFade: 180
+  m_UVScale: {x: 1, y: 1}
+  m_UVBias: {x: 0, y: 0}
+  m_AffectsTransparency: 0
+  m_DecalLayerMask: 1
+  m_ScaleMode: 0
+  m_Offset: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4, y: 3, z: 1}
+  m_FadeFactor: 1
+  m_Version: 2
+--- !u!4 &1748667226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748667224}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.6885041, y: -0.16112764, z: 0.1611276, w: 0.68850416}
+  m_LocalPosition: {x: 2.65, y: 0.44, z: -3.29}
+  m_LocalScale: {x: 4.228, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 26.343}
 --- !u!1 &1998795428
 GameObject:
   m_ObjectHideFlags: 0
@@ -3127,3 +3188,4 @@ SceneRoots:
   - {fileID: 856083755}
   - {fileID: 2114091335}
   - {fileID: 399141742}
+  - {fileID: 1748667226}
