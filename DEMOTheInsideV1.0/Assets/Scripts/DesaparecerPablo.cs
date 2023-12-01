@@ -10,7 +10,8 @@ public class DesaparecerPablo : MonoBehaviour
     public bool PabloAlive = false;
 
     public PabloManager pabloManager;
-    
+    public Animator Pablo2Anim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,8 @@ public class DesaparecerPablo : MonoBehaviour
         if (Physics.Raycast(ray, out hit) && hit.transform == transform)
         {
             ObjectDetect = true;
+            Pablo2Anim.SetTrigger("dis");
+
         }
         else
         {
