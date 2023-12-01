@@ -270,7 +270,7 @@ public class CharacterInput : MonoBehaviour
                 }
                 if (selection.CompareTag("Lock") && Input.GetKeyDown(KeyCode.F))
                 {
-                    ;
+                    
                     Cursor.lockState = CursorLockMode.None;
                     CamMain.SetActive(false);
                     cam2.SetActive(true);

@@ -69,7 +69,7 @@ Material:
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 0
     - _AlphaSrcBlend: 1
-    - _Base_Roughness: 0.15
+    - _Base_Roughness: 0.73
     - _BlendMode: 0
     - _Color_Contrast: 1
     - _ConservativeDepthOffsetEnable: 0
