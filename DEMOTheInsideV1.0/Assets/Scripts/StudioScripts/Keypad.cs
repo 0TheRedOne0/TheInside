@@ -6,7 +6,7 @@ public class Keypad : MonoBehaviour
 {
     [SerializeField ]private Animator Anim;
 
-    public string password = "1234567890";
+    public string password = "1082357496";
     private string userInput = "";
 
     public AudioClip clickSound;
