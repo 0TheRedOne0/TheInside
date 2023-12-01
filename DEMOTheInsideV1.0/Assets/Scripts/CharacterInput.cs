@@ -10,9 +10,10 @@ public class CharacterInput : MonoBehaviour
 
     //Inside/Outside Varibles
     public bool Inside = false;
-    public Material OutsidetMat;
+    public Material[] OutsidetMats;
     public GameObject GVOut;
     public GameObject GVIn;
+    public string PropertyName = "_Inside";
 
     //1st Puzzle variables
     public GameObject Inventory;
@@ -165,7 +166,7 @@ public class CharacterInput : MonoBehaviour
 
             Debug.Log(" Inside");
             Inside = true;
-            OutsidetMat.SetFloat("_Inside", 1);
+            CMP(1f);
             GVOut.SetActive(false);
             GVIn.SetActive(true);
 
@@ -174,7 +175,7 @@ public class CharacterInput : MonoBehaviour
         {
             Debug.Log("Cambio de perspectiva al Outside");
             Inside = false;
-            OutsidetMat.SetFloat("_Inside", 0);
+            CMP(0f);
             GVOut.SetActive(true);
             GVIn.SetActive(false);
         }
@@ -364,11 +365,19 @@ public class CharacterInput : MonoBehaviour
 
     }
 
+    void CMP(float value)
+    {
+        foreach (Material material in OutsidetMats)
+        {
+            // Asegúrate de que el material y la propiedad existan antes de intentar modificarla
+            if (material != null && material.HasProperty("_Inside"))
+            {
+                // Cambia el valor de la propiedad en el shader
+                material.SetFloat("_Inside", value);
+            }
+        }
+    }
 
-
-
-       
-    
 
     IEnumerator ReCam()
     {
