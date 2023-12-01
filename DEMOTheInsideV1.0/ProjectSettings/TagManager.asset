@@ -23,6 +23,7 @@ TagManager:
   - K
   - Lock
   - LockB
+  - Door
   layers:
   - Default
   - TransparentFX
