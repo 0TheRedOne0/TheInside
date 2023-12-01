@@ -296,25 +296,25 @@ public class CharacterInput : MonoBehaviour
                     OpenDoor1 = false;
                     Door1.SetTrigger("Cerrado");
                 }
-                if (selection.CompareTag("Door") && selection.position.Equals(DoorBath.transform.position) && OpenDoor2 == false && Input.GetKeyDown(KeyCode.F))
+                if (selection.CompareTag("Door") && selection.position.Equals(DoorKitchen.transform.position) && OpenDoor2 == false && Input.GetKeyDown(KeyCode.F))
                 {
                     //Debug.Log("Cumplida");
                     OpenDoor2 = true;
                     Door2.SetTrigger("Abierto");
                 }
-                else if (selection.CompareTag("Door") && selection.position.Equals(DoorBath.transform.position) && OpenDoor2 == true && Input.GetKeyDown(KeyCode.F))
+                else if (selection.CompareTag("Door") && selection.position.Equals(DoorKitchen.transform.position) && OpenDoor2 == true && Input.GetKeyDown(KeyCode.F))
                 {
                     //Debug.Log("Cumplida");
                     OpenDoor2 = false;
                     Door2.SetTrigger("Cerrado");
                 }
-                if (selection.CompareTag("Door") && selection.position.Equals(DoorKitchen.transform.position) && OpenDoor3 == false && Input.GetKeyDown(KeyCode.F))
+                if (selection.CompareTag("Door") && selection.position.Equals(DoorBath.transform.position) && OpenDoor3 == false && Input.GetKeyDown(KeyCode.F))
                 {
                     //Debug.Log("Cumplida");
                     OpenDoor3 = true;
                     Door3.SetTrigger("Abierto");
                 }
-                else if (selection.CompareTag("Door") && selection.position.Equals(DoorKitchen.transform.position) && OpenDoor3 == true && Input.GetKeyDown(KeyCode.F))
+                else if (selection.CompareTag("Door") && selection.position.Equals(DoorBath.transform.position) && OpenDoor3 == true && Input.GetKeyDown(KeyCode.F))
                 {
                     //Debug.Log("Cumplida");
                     OpenDoor3 = false;

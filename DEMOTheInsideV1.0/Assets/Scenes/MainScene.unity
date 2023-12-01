@@ -13302,9 +13302,9 @@ MonoBehaviour:
   Door3: {fileID: 1974857345}
   Door4: {fileID: 503497741}
   DoorRoom: {fileID: 1309624322375594140}
-  DoorBath: {fileID: 0}
-  DoorKitchen: {fileID: 0}
-  DoorExit: {fileID: 0}
+  DoorBath: {fileID: 1974857344}
+  DoorKitchen: {fileID: 991419557}
+  DoorExit: {fileID: 503497740}
 --- !u!4 &1030808657
 Transform:
   m_ObjectHideFlags: 0
