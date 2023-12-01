@@ -34,12 +34,19 @@ public class CharacterInput : MonoBehaviour
 
     //FousVariables
     Camera cam;
+    public GameObject cam2;
+    public GameObject cam3;
     public bool Focus;
+    private bool Focus2;
+    private bool Focus3;
 
     //RaycastVariables
     [SerializeField] private Material SelectedMat;
     [SerializeField] private Material DefaultMat;
-    private Transform selection_; 
+    private Transform selection_;
+
+    //DoorOpener
+    public bool OpenDoor;
 
     
 
@@ -51,6 +58,12 @@ public class CharacterInput : MonoBehaviour
         DropPos = GameObject.Find("DropPos");
         StartPoint = GameObject.Find("StartPoint");
         cam = Camera.main;
+        OpenDoor=false;
+
+
+        //cam2 = GameObject.Find("Lock").GetComponent<Camera>();
+        //cam3 = GameObject.Find("LockB").GetComponent<Camera>();
+
         ItemHold = false;
     }
 
@@ -195,46 +208,93 @@ public class CharacterInput : MonoBehaviour
             selectionRenderer.material = DefaultMat;
             selection_ = null;
         }
-
-        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
+        if (Focus == false && Focus2 == false && Focus3 == false)
         {
-            var selection = hit.transform;
-            if (selection.CompareTag("C")|| selection.CompareTag("Tile") || selection.CompareTag("Bag")|| selection.CompareTag("Boton"))
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
             {
-                var selectionRenderer = selection.GetComponent<Renderer>();
-                if (selectionRenderer != null)
+                var selection = hit.transform;
+                if (selection.CompareTag("C") || selection.CompareTag("Tile") || selection.CompareTag("Bag")
+                 || selection.CompareTag("Boton") || selection.CompareTag("LockB") || selection.CompareTag("Lock")
+                 || selection.CompareTag("Door"))
                 {
-                    DefaultMat = selectionRenderer.material;
-                    selectionRenderer.material = SelectedMat;
+                    var selectionRenderer = selection.GetComponent<Renderer>();
+                    if (selectionRenderer != null)
+                    {
+                        DefaultMat = selectionRenderer.material;
+                        selectionRenderer.material = SelectedMat;
+                    }
+                    selection_ = selection;
+
                 }
-                selection_ = selection;
-
-            }
 
 
-            if (selection.CompareTag("C")&& Input.GetKeyDown(KeyCode.F))
-            {
-                ActualPic =selection.gameObject;
-                ItemHold = true;
-                ActualPic.transform.position = Inventory.transform.position;
+                if (selection.CompareTag("C") && Input.GetKeyDown(KeyCode.F))
+                {
+                    ActualPic = selection.gameObject;
+                    ItemHold = true;
+                    ActualPic.transform.position = Inventory.transform.position;
+                }
+                if (selection.CompareTag("Tile") && Input.GetKeyDown(KeyCode.F))
+                {
+                    ActualPic = selection.gameObject;
+                    ItemHold = true;
+                    ActualPic.transform.position = InventoryT.transform.position;
+                }
+                if (selection.CompareTag("Bag") && Input.GetKeyDown(KeyCode.F))
+                {
+                    //Debug.Log("ispressing");
+                    ActualPic = selection.gameObject;
+                    ItemHold = true;
+                    ActualPic.transform.position = InventoryT.transform.position;
+                }
+                if (selection.CompareTag("Lock") && Input.GetKeyDown(KeyCode.F))
+                {
+                    ;
+                    Cursor.lockState = CursorLockMode.None;
+                    CamMain.SetActive(false);
+                    cam2.SetActive(true);
+                    Focus2 = true;
+                }
+
+                if (selection.CompareTag("LockB") && Input.GetKeyDown(KeyCode.F))
+                {
+
+                    Cursor.lockState = CursorLockMode.None;
+                    CamMain.SetActive(false);
+                    cam3.SetActive(true);
+                    Focus3 = true;
+                }
+                if (selection.CompareTag("Door") && Input.GetKeyDown(KeyCode.F))
+                {
+                    OpenDoor = true;
+                }
             }
-            if (selection.CompareTag("Tile") && Input.GetKeyDown(KeyCode.F))
-            {
-                ActualPic = selection.gameObject;
-                ItemHold = true;
-                ActualPic.transform.position = InventoryT.transform.position;
-            }
-            if (selection.CompareTag("Bag") && Input.GetKeyDown(KeyCode.F))
-            {
-                Debug.Log("ispressing");
-                ActualPic = selection.gameObject;
-                ItemHold = true;
-                ActualPic.transform.position = InventoryT.transform.position;
-            }
+            
         }
+        if (Focus3 == true && Input.GetKeyDown(KeyCode.F))
+        {
+            Debug.Log("ispressingtwice");
+            Cursor.lockState = CursorLockMode.Locked;
+            CamMain.SetActive(true);
+            cam3.SetActive(false);
+
+            Focus3 = false;
+        }
+        if (Focus2 == true && Input.GetKeyDown(KeyCode.F))
+        {
+            Debug.Log("ispressingtwice");
+            Cursor.lockState = CursorLockMode.Locked;
+            CamMain.SetActive(true);
+            cam2.SetActive(false);
+
+            Focus2 = false;
+        }
+
     }
+
 
 
 
