@@ -84,12 +84,12 @@ Material:
     - _EnableFogOnTransparent: 1
     - _Has_AO: 0
     - _Has_Color_Texture: 1
-    - _Has_Normal_Map_Texture: 0
+    - _Has_Normal_Map_Texture: 1
     - _Hue: 0
     - _Inside: 0
     - _Is_Metal: 0
     - _Metallic: 0
-    - _Normal_Strenght: 1
+    - _Normal_Strenght: -0.3
     - _OpaqueCullMode: 2
     - _OpenGL: 0
     - _RayTracing: 0
