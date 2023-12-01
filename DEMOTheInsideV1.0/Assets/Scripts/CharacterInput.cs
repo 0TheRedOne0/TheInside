@@ -278,7 +278,7 @@ public class CharacterInput : MonoBehaviour
 
                 if (selection.CompareTag("LockB") && Input.GetKeyDown(KeyCode.F))
                 {
-
+                    Debug.Log("CambioCam");
                     Cursor.lockState = CursorLockMode.None;
                     CamMain.SetActive(false);
                     cam3.SetActive(true);
