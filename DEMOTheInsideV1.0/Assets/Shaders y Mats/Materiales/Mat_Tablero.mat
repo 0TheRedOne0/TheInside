@@ -23,7 +23,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mat_Armario
+  m_Name: Mat_Tablero
   m_Shader: {fileID: -6465566751694194690, guid: 479945721152426439fa3617dd42defd,
     type: 3}
   m_Parent: {fileID: 0}
@@ -48,19 +48,19 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Base_Color_Texture:
-        m_Texture: {fileID: 2800000, guid: 92ad43ff60035214d8dce6dc1354e19f, type: 3}
+        m_Texture: {fileID: 2800000, guid: fc7dfbedf3fdc2f44b9018fff7590222, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _InsideColorTexture:
-        m_Texture: {fileID: 2800000, guid: 6681e3c78af344d419fe163cf29c28c3, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6d1c018ae2db8fb4c9d4834bf852ab24, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal_Texture_Map:
-        m_Texture: {fileID: 2800000, guid: 83ee12a1f9ee37c44bb4bf275a293149, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7829391275a654f44872f6ebdc99f7ee, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ORM_Texture:
-        m_Texture: {fileID: 2800000, guid: a89908f5a0360e049962f12e571b91f9, type: 3}
+        m_Texture: {fileID: 2800000, guid: ff3fe201c0f015b4bbc819e2f302f7d6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_4ac257e7515a41368746624ad5d241ca_Texture_1_Texture2D:
@@ -102,7 +102,7 @@ Material:
     - _Has_Color_Texture: 1
     - _Has_Normal_Map_Texture: 1
     - _Hue: 0
-    - _Inside: 1
+    - _Inside: 0
     - _Is_Metal: 0
     - _Metallic: 0
     - _Normal_Strenght: -1.5
