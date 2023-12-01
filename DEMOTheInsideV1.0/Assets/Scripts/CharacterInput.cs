@@ -10,7 +10,7 @@ public class CharacterInput : MonoBehaviour
 
     //Inside/Outside Varibles
     public bool Inside = false;
-    private Material OutsidetMat;
+    public Material OutsidetMat;
     public GameObject GVOut;
     public GameObject GVIn;
 
