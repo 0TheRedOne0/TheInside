@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TuercasLock
+  m_Name: PlatoGato_mat
   m_Shader: {fileID: -6465566751694194690, guid: 479945721152426439fa3617dd42defd,
     type: 3}
   m_Parent: {fileID: 0}
@@ -41,7 +41,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Base_Color_Texture:
-        m_Texture: {fileID: 2800000, guid: f7e3362f56de6b64ebfc7cdef14c4b11, type: 3}
+        m_Texture: {fileID: 2800000, guid: bd3ba517ed5a40a41af8f7f400a9b9b4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
@@ -69,7 +69,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _InsideColorTexture:
-        m_Texture: {fileID: 2800000, guid: 214c27a44bdadd249906a70236ac9ef0, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _IridescenceMaskMap:
@@ -97,11 +97,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal_Texture_Map:
-        m_Texture: {fileID: 2800000, guid: 4a7390765d5f6494f98f6f0f088e6616, type: 3}
+        m_Texture: {fileID: 2800000, guid: 76aaefb64fd88094298483a058a5caa0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ORM_Texture:
-        m_Texture: {fileID: 2800000, guid: 5cf2f887577def14d9f358d0c1ad640d, type: 3}
+        m_Texture: {fileID: 2800000, guid: ddd4b5280f049f94dae5a1b7c50189ac, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_4ac257e7515a41368746624ad5d241ca_Texture_1_Texture2D:
@@ -165,7 +165,7 @@ Material:
     - _AlphaRemapMin: 0
     - _AlphaSrcBlend: 1
     - _Anisotropy: 0
-    - _Base_Roughness: 0.42
+    - _Base_Roughness: 0.15
     - _BlendMode: 0
     - _CoatMask: 0
     - _Color_Contrast: 1
@@ -194,9 +194,9 @@ Material:
     - _EnableFogOnTransparent: 1
     - _EnableGeometricSpecularAA: 0
     - _EnergyConservingSpecularColor: 1
-    - _Has_AO: 1
-    - _Has_Color_Texture: 1
-    - _Has_Normal_Map_Texture: 1
+    - _Has_AO: 0
+    - _Has_Color_Texture: 0
+    - _Has_Normal_Map_Texture: 0
     - _HeightAmplitude: 0.02
     - _HeightCenter: 0.5
     - _HeightMapParametrization: 0
@@ -212,10 +212,10 @@ Material:
     - _Ior: 1.5
     - _IridescenceMask: 1
     - _IridescenceThickness: 1
-    - _Is_Metal: 1
+    - _Is_Metal: 0
     - _LinkDetailsWithBase: 1
     - _MaterialID: 1
-    - _Metallic: 0.493
+    - _Metallic: 0
     - _MetallicRemapMax: 1
     - _MetallicRemapMin: 0
     - _NormalMapSpace: 0
@@ -224,7 +224,7 @@ Material:
     - _ObjectSpaceUVMapping: 0
     - _ObjectSpaceUVMappingEmissive: 0
     - _OpaqueCullMode: 2
-    - _OpenGL: 1
+    - _OpenGL: 0
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15
     - _PPDMinSamples: 5
@@ -302,7 +302,7 @@ Material:
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &3271870996667790990
+--- !u!114 &7008659511715344441
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

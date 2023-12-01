@@ -30,7 +30,7 @@ MonoBehaviour:
     m_Value: 1
   roundness:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.021
   rounded:
     m_OverrideState: 1
     m_Value: 1
@@ -314,8 +314,8 @@ MonoBehaviour:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
-          time: 0.54435486
-          value: 0.1681416
+          time: 0.51844656
+          value: 0.10555524
           inSlope: 0
           outSlope: 0
           tangentMode: 0

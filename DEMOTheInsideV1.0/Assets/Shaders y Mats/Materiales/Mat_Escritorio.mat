@@ -107,7 +107,7 @@ Material:
     - _Metallic: 0
     - _Normal_Strenght: -1.5
     - _OpaqueCullMode: 2
-    - _OpenGL: 1
+    - _OpenGL: 0
     - _RayTracing: 0
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
