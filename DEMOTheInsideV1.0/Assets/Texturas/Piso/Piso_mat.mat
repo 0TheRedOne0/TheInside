@@ -181,7 +181,7 @@ Material:
     - _AlphaRemapMin: 0
     - _AlphaSrcBlend: 1
     - _Anisotropy: 0
-    - _Base_Roughness: 0.93
+    - _Base_Roughness: 0.87
     - _BlendMode: 0
     - _CoatMask: 0
     - _Color_Contrast: 1
@@ -210,7 +210,7 @@ Material:
     - _EnableFogOnTransparent: 1
     - _EnableGeometricSpecularAA: 0
     - _EnergyConservingSpecularColor: 1
-    - _Has_AO: 0
+    - _Has_AO: 1
     - _Has_Color_Texture: 0
     - _Has_Normal_Map_Texture: 1
     - _HeightAmplitude: 0.02
@@ -240,7 +240,7 @@ Material:
     - _ObjectSpaceUVMapping: 0
     - _ObjectSpaceUVMappingEmissive: 0
     - _OpaqueCullMode: 2
-    - _OpenGL: 0
+    - _OpenGL: 1
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15
     - _PPDMinSamples: 5
@@ -312,7 +312,7 @@ Material:
     - _Solid_Color: {r: 0.30188674, g: 0.06692771, b: 0.25533926, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
-    - _Tiling_Offset: {r: 1, g: 1, b: 0, a: 0}
+    - _Tiling_Offset: {r: 2, g: 2, b: 0, a: 0}
     - _TransmittanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
