@@ -36,7 +36,7 @@ public class JumpscareManager : MonoBehaviour
             CamMain.gameObject.SetActive(false);
             CamJump.gameObject.SetActive(true);
             PabloAnim.gameObject.SetActive(true);
-            WaitJump();
+            StartCoroutine(WaitJump());
         }
     }
 
@@ -44,7 +44,7 @@ public class JumpscareManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         animP.SetBool("Jump", true);
-        animC.SetBool("Blink", true);
+        animC.SetTrigger("Blink");
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("MainScene");
         PlaySound();
