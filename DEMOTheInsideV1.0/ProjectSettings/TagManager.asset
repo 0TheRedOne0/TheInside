@@ -21,6 +21,7 @@ TagManager:
   - Bag
   - Boton
   - Collar
+
   layers:
   - Default
   - TransparentFX

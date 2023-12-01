@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameManager : MonoBehaviour
@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public GameObject C2;
     public GameObject C3;
     public GameObject C4;
+    private Quaternion Orientation;
 
     //Variables de la Cocina
     public PuzzlePiece RC;
@@ -70,7 +71,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        
+
 
         //Sala
         C1 = GameObject.Find("C1");
@@ -81,9 +82,13 @@ public class GameManager : MonoBehaviour
         C2pos = GameObject.Find("Frame2");
         C3pos = GameObject.Find("Frame3");
         C4pos = GameObject.Find("Frame4");
+        Orientation = new Quaternion(-0.707106829f, 0, 0, 0.707106829f);
+
+       
+
 
         //TP
-        Player= GameObject.Find("FPplayer");
+        Player = GameObject.Find("FPplayer");
         StartPoint = GameObject.Find("StartPoint");
         Exit = GameObject.Find("Exit");
 
@@ -130,6 +135,26 @@ public class GameManager : MonoBehaviour
             firstLoop = true;
 
         }
+        if (C1.transform.position.Equals(C1pos.transform.position) || C1.transform.position.Equals(C2pos.transform.position)
+           || C1.transform.position.Equals(C3pos.transform.position) || C1.transform.position.Equals(C4pos.transform.position))
+        {
+            C1.transform.rotation = Orientation;
+        }
+        if (C2.transform.position.Equals(C1pos.transform.position) || C2.transform.position.Equals(C2pos.transform.position)
+           || C2.transform.position.Equals(C3pos.transform.position) || C2.transform.position.Equals(C4pos.transform.position))
+        {
+            C2.transform.rotation = Orientation;
+        }
+        if (C3.transform.position.Equals(C1pos.transform.position) || C3.transform.position.Equals(C2pos.transform.position)
+           || C3.transform.position.Equals(C3pos.transform.position) || C3.transform.position.Equals(C4pos.transform.position))
+        {
+            C3.transform.rotation = Orientation;
+        }
+        if (C4.transform.position.Equals(C1pos.transform.position)|| C4.transform.position.Equals(C2pos.transform.position)
+            ||C4.transform.position.Equals(C3pos.transform.position)||C4.transform.position.Equals(C4pos.transform.position))
+        {
+            C4.transform.rotation = Orientation;
+        }
     }
 
     void Timer()
@@ -162,6 +187,7 @@ public class GameManager : MonoBehaviour
         if(timerHrs<=12&& am == false)
         {
             Debug.Log("EndGame");
+            SceneManager.LoadScene("MainScene");
         }
 
 
