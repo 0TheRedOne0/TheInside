@@ -43,7 +43,10 @@ public class CharacterInput : MonoBehaviour
     //RaycastVariables
     [SerializeField] private Material SelectedMat;
     [SerializeField] private Material DefaultMat;
-    private Transform selection_; 
+    private Transform selection_;
+
+    //DoorOpener
+    public bool OpenDoor;
 
     
 
@@ -55,7 +58,8 @@ public class CharacterInput : MonoBehaviour
         DropPos = GameObject.Find("DropPos");
         StartPoint = GameObject.Find("StartPoint");
         cam = Camera.main;
-        
+        OpenDoor=false;
+
 
         //cam2 = GameObject.Find("Lock").GetComponent<Camera>();
         //cam3 = GameObject.Find("LockB").GetComponent<Camera>();
@@ -213,7 +217,8 @@ public class CharacterInput : MonoBehaviour
             {
                 var selection = hit.transform;
                 if (selection.CompareTag("C") || selection.CompareTag("Tile") || selection.CompareTag("Bag")
-                 || selection.CompareTag("Boton") || selection.CompareTag("LockB") || selection.CompareTag("Lock"))
+                 || selection.CompareTag("Boton") || selection.CompareTag("LockB") || selection.CompareTag("Lock")
+                 || selection.CompareTag("Door"))
                 {
                     var selectionRenderer = selection.GetComponent<Renderer>();
                     if (selectionRenderer != null)
@@ -261,6 +266,10 @@ public class CharacterInput : MonoBehaviour
                     CamMain.SetActive(false);
                     cam3.SetActive(true);
                     Focus3 = true;
+                }
+                if (selection.CompareTag("Door") && Input.GetKeyDown(KeyCode.F))
+                {
+                    OpenDoor = true;
                 }
             }
             
