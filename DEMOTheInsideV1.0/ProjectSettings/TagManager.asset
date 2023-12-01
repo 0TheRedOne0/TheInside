@@ -20,6 +20,9 @@ TagManager:
   - Tile
   - Bag
   - Boton
+  - K
+  - Lock
+  - LockB
   layers:
   - Default
   - TransparentFX
