@@ -10,9 +10,10 @@ public class GameManager : MonoBehaviour
     public GameObject Player;
     public GameObject StartPoint;
     public GameObject Exit;
+    public CharacterInput firstB;
    
    //MonsterVariables
-   public CharacterInput Inside;
+  // public CharacterInput Inside;
 
     //Invntory Pos
     public GameObject Inventory;
@@ -91,6 +92,7 @@ public class GameManager : MonoBehaviour
         Player = GameObject.Find("FPplayer");
         StartPoint = GameObject.Find("StartPoint");
         Exit = GameObject.Find("Exit");
+        //Inside.ExitBoolCI;
 
         //Interfaz
         firstTut = true;
@@ -101,7 +103,12 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-       
+        if (firstB.ExitBoolCI == true)
+        {
+            firstLoop = true;
+
+        }
+
         Psala();
         Timer();
         Rompechoya();
@@ -111,7 +118,7 @@ public class GameManager : MonoBehaviour
 
 
     }
-
+    
     void UIcontrol()
     {
         if (Control == true && Input.GetKeyDown(KeyCode.C))
@@ -132,7 +139,7 @@ public class GameManager : MonoBehaviour
             C3.transform.position.Equals(C3pos.transform.position) && C4.transform.position.Equals(C4pos.transform.position))
         {
             Debug.Log("Primer Puzzle Completado");
-            firstLoop = true;
+            secondLoop = true;
 
         }
         if (C1.transform.position.Equals(C1pos.transform.position) || C1.transform.position.Equals(C2pos.transform.position)
@@ -227,6 +234,7 @@ public class GameManager : MonoBehaviour
     }
     void loopManager()
     {
+       
         if ( firstLoop == true)
         {
             ESCloop1.SetActive(true);

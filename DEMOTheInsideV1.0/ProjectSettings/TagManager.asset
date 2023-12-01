@@ -20,8 +20,11 @@ TagManager:
   - Tile
   - Bag
   - Boton
+  - K
+  - Lock
+  - LockB
+  - Door
   - Collar
-
   layers:
   - Default
   - TransparentFX
