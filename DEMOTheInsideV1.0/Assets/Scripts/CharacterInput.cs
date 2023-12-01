@@ -10,7 +10,7 @@ public class CharacterInput : MonoBehaviour
 
     //Inside/Outside Varibles
     public bool Inside = false;
-    public Material OutsidetMat;
+    private Material OutsidetMat;
     public GameObject GVOut;
     public GameObject GVIn;
 
@@ -47,8 +47,12 @@ public class CharacterInput : MonoBehaviour
 
     //DoorOpener
     public bool OpenDoor;
+    public GameObject DoorRoom;
+    public GameObject DoorBath;
+    public GameObject DoorKitchen;
+    public GameObject DoorExit;
 
-    
+
 
 
     private void Start()
@@ -218,7 +222,7 @@ public class CharacterInput : MonoBehaviour
                 var selection = hit.transform;
                 if (selection.CompareTag("C") || selection.CompareTag("Tile") || selection.CompareTag("Bag")
                  || selection.CompareTag("Boton") || selection.CompareTag("LockB") || selection.CompareTag("Lock")
-                 || selection.CompareTag("Door"))
+                 || selection.CompareTag("Door") || selection.CompareTag("Collar"))
                 {
                     var selectionRenderer = selection.GetComponent<Renderer>();
                     if (selectionRenderer != null)
@@ -270,6 +274,10 @@ public class CharacterInput : MonoBehaviour
                 if (selection.CompareTag("Door") && Input.GetKeyDown(KeyCode.F))
                 {
                     OpenDoor = true;
+                }
+                if (selection.CompareTag("Collar") && Input.GetKeyDown(KeyCode.F))
+                {
+                    //OpenDoor = true;
                 }
             }
             

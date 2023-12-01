@@ -24,6 +24,7 @@ TagManager:
   - Lock
   - LockB
   - Door
+  - Collar
   layers:
   - Default
   - TransparentFX
