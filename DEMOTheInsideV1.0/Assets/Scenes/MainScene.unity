@@ -13117,8 +13117,12 @@ MonoBehaviour:
   controller: {fileID: 1030808655}
   speed: 16
   Inside: 0
+  OutsidetMats:
+  - {fileID: 2100000, guid: 0b1a49c924a4b744e92d6c442487c300, type: 2}
+  - {fileID: 2100000, guid: 417d09a1876891d4680a6de0689ea80c, type: 2}
   GVOut: {fileID: 1246566334}
   GVIn: {fileID: 1587836904}
+  PropertyName: _Inside
   Inventory: {fileID: 0}
   InventoryT: {fileID: 0}
   ActualPic: {fileID: 0}
