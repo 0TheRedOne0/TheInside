@@ -7686,6 +7686,100 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1910779046}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &772309148
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 929064789}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: aac2ba5f585004a9b8d5033ae35fc581,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.0468233
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aac2ba5f585004a9b8d5033ae35fc581,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.0468233
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aac2ba5f585004a9b8d5033ae35fc581,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.0468233
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aac2ba5f585004a9b8d5033ae35fc581,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.105
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aac2ba5f585004a9b8d5033ae35fc581,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.331
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aac2ba5f585004a9b8d5033ae35fc581,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.049
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aac2ba5f585004a9b8d5033ae35fc581,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.26949614
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aac2ba5f585004a9b8d5033ae35fc581,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0005756536
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aac2ba5f585004a9b8d5033ae35fc581,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.96083623
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aac2ba5f585004a9b8d5033ae35fc581,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.06453971
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aac2ba5f585004a9b8d5033ae35fc581,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -7.142
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aac2ba5f585004a9b8d5033ae35fc581,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 148.543
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aac2ba5f585004a9b8d5033ae35fc581,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 1.945
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: aac2ba5f585004a9b8d5033ae35fc581,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2ea6eb78e9d4dae41bf13b33f35af140, type: 2}
+    - target: {fileID: 919132149155446097, guid: aac2ba5f585004a9b8d5033ae35fc581,
+        type: 3}
+      propertyPath: m_Name
+      value: CollarGato
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aac2ba5f585004a9b8d5033ae35fc581, type: 3}
+--- !u!4 &772309149 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: aac2ba5f585004a9b8d5033ae35fc581,
+    type: 3}
+  m_PrefabInstance: {fileID: 772309148}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &780883789
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9309,6 +9403,7 @@ Transform:
   m_Children:
   - {fileID: 2070618725}
   - {fileID: 1359449214}
+  - {fileID: 772309149}
   - {fileID: 1802908761}
   - {fileID: 1288875061}
   - {fileID: 2009213034}
