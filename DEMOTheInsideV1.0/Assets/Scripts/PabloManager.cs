@@ -17,6 +17,13 @@ public class PabloManager : MonoBehaviour
     //public DesaparecerPablo PabloDeath;
     public bool PabloPresent=false;
 
+    //variables pablov2.0
+    public bool hunting = false;
+    public float activationTime = 3f; // Tiempo en segundos antes de activar el boolean
+    private bool Activado = false;
+    public GameObject pabloHunt;
+    public Transform runSpawn;
+
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +49,9 @@ public class PabloManager : MonoBehaviour
         {
             if (Arriba == true && Lock==false && PabloPresent==false)
             {
+
+                // Invoca el método SetBoolAfterTime después de activationTime segundos
+                Invoke("SetBoolAfterTime", activationTime);
                 int randomSpawnIndex = Random.Range(0, spawnpointsArriba.Length);
                 Vector3 spawnPosition = spawnpointsArriba[randomSpawnIndex].position;
 
@@ -90,6 +100,19 @@ public class PabloManager : MonoBehaviour
         else
         {
             Arriba = false;
+        }
+    }
+
+    void SetBoolAfterTime()
+    {
+        if (!Activado)
+        {
+            hunting = true; // Activa el booleano
+            Activado = true; // Marca que ha sido activado
+            Debug.Log("El booleano ha sido activado después de " + activationTime + " segundos.");
+            Vector3 SP = runSpawn.position;
+            Instantiate(pabloHunt, SP, Quaternion.identity);
+            Lock = true;
         }
     }
 
