@@ -181,7 +181,7 @@ Material:
     - _AlphaRemapMin: 0
     - _AlphaSrcBlend: 1
     - _Anisotropy: 0
-    - _Base_Roughness: 0.15
+    - _Base_Roughness: 0.61
     - _BlendMode: 0
     - _CoatMask: 0
     - _Color_Contrast: 1
@@ -223,7 +223,7 @@ Material:
     - _HeightTessAmplitude: 2
     - _HeightTessCenter: 0.5
     - _Hue: 0
-    - _Inside: 0
+    - _Inside: 1
     - _InvTilingScale: 1
     - _Ior: 1.5
     - _IridescenceMask: 1

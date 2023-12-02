@@ -181,7 +181,7 @@ Material:
     - _AlphaRemapMin: 0
     - _AlphaSrcBlend: 1
     - _Anisotropy: 0
-    - _Base_Roughness: 0.15
+    - _Base_Roughness: 0.37
     - _BlendMode: 0
     - _CoatMask: 0
     - _Color_Contrast: 1
