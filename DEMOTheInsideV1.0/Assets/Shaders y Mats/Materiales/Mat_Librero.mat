@@ -85,7 +85,7 @@ Material:
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 0
     - _AlphaSrcBlend: 1
-    - _Base_Roughness: 1
+    - _Base_Roughness: 0.91
     - _BlendMode: 0
     - _Color_Contrast: 1
     - _ConservativeDepthOffsetEnable: 0
@@ -102,7 +102,7 @@ Material:
     - _Has_Color_Texture: 1
     - _Has_Normal_Map_Texture: 1
     - _Hue: 0
-    - _Inside: 0
+    - _Inside: 1
     - _Is_Metal: 0
     - _Metallic: 0
     - _Normal_Strenght: -1.5

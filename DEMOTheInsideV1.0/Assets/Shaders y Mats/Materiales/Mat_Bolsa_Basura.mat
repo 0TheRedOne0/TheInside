@@ -35,6 +35,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: bd3ba517ed5a40a41af8f7f400a9b9b4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _InsideColorTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Normal_Texture_Map:
         m_Texture: {fileID: 2800000, guid: 76aaefb64fd88094298483a058a5caa0, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -82,7 +86,7 @@ Material:
     - _Has_Color_Texture: 1
     - _Has_Normal_Map_Texture: 1
     - _Hue: 0
-    - _Inside: 0
+    - _Inside: 1
     - _Is_Metal: 0
     - _Metallic: 0
     - _Normal_Strenght: 2.1
