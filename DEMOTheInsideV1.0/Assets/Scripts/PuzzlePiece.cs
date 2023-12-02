@@ -17,7 +17,7 @@ public class PuzzlePiece : MonoBehaviour
         Debug.Log("Soltada");
         if (ThisPiece.gameObject.tag == PS.gameObject.tag)
         {
-            if (Vector2.Distance(ThisPiece.transform.position, PS.transform.position) < 3)
+            if (Vector2.Distance(ThisPiece.transform.position, PS.transform.position) < 10)
             {
                 transform.position = PS.transform.position;
                 placed = true;
