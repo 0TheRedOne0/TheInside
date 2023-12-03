@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
     public bool fourthLoop = false;
     public bool fitfthLoop = false;
 
+    public int loopNum;
     public GameObject ESCloop1;
     public GameObject ESCloop2;
     public GameObject ESCloop3;
@@ -77,7 +78,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
 
-
+        loopNum = 0;
         //Sala
         C1 = GameObject.Find("C1");
         C2 = GameObject.Find("C2");
@@ -251,26 +252,31 @@ public class GameManager : MonoBehaviour
         {
             ESCloop1.SetActive(true);
             BlockRoom.SetActive(false);
+            loopNum = 1;
         }
         if (secondLoop == true)
         {
             ESCloop2.SetActive(true);
             BlockLiving.SetActive(false);
+            loopNum = 2;
         }
         if (thirdLoop == true)
         {
             ESCloop3.SetActive(true);
             BlockKitchen.SetActive(false);
+            loopNum = 3;
         }
         if (fourthLoop == true)
         {
             ESCloop4.SetActive(true);
             BlockBath.SetActive(false);
+            loopNum = 4;
         }
         if (fitfthLoop == true)
         {
             ESCloop5.SetActive(true);
             BlockStudio.SetActive(false);
+            loopNum = 6;
         }
         
        
