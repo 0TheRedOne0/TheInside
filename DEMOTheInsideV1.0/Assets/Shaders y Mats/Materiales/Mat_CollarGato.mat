@@ -85,7 +85,7 @@ Material:
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 0
     - _AlphaSrcBlend: 1
-    - _Base_Roughness: 0.41
+    - _Base_Roughness: 0.682
     - _BlendMode: 0
     - _Color_Contrast: 7.4
     - _ConservativeDepthOffsetEnable: 0
@@ -104,7 +104,7 @@ Material:
     - _Hue: 0
     - _Inside: 1
     - _Is_Metal: 1
-    - _Metallic: 0.24
+    - _Metallic: 0.436
     - _Normal_Strenght: -1.5
     - _OpaqueCullMode: 2
     - _OpenGL: 1
@@ -118,7 +118,7 @@ Material:
     - _Roughness_Blend: 1
     - _Roughness_Texture_Contrast: 1
     - _Roughness_White: 1
-    - _Solid_Color_Overlay: 0
+    - _Solid_Color_Overlay: 0.84
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
@@ -147,6 +147,6 @@ Material:
     m_Colors:
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Solid_Color: {r: 0.30188674, g: 0.06692771, b: 0.25533926, a: 0}
+    - _Solid_Color: {r: 0.22116414, g: 0.22703078, b: 0.6603774, a: 0}
     - _Tiling_Offset: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []

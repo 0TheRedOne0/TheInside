@@ -181,7 +181,7 @@ Material:
     - _AlphaRemapMin: 0
     - _AlphaSrcBlend: 1
     - _Anisotropy: 0
-    - _Base_Roughness: 1
+    - _Base_Roughness: 0.8
     - _BlendMode: 0
     - _CoatMask: 0
     - _Color_Contrast: 1
@@ -253,7 +253,7 @@ Material:
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
     - _Roughness_Black: -0.61
-    - _Roughness_Blend: 0.72
+    - _Roughness_Blend: 0.93
     - _Roughness_Texture_Contrast: 1
     - _Roughness_White: 1
     - _Smoothness: 0.5
@@ -312,7 +312,7 @@ Material:
     - _Solid_Color: {r: 0.30188674, g: 0.06692771, b: 0.25533926, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
-    - _Tiling_Offset: {r: 2.4, g: 2.4, b: 0, a: 0}
+    - _Tiling_Offset: {r: 10, g: 10, b: 0, a: 0}
     - _TransmittanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
