@@ -230,6 +230,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Segundo Puzzle terminado");
             camRC.SetActive(false);
             camMain.SetActive(true);
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
     void loopManager()

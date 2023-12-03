@@ -17,7 +17,7 @@ public class PuzzlePiece : MonoBehaviour
         Debug.Log("Soltada");
         if (ThisPiece.gameObject.tag == PS.gameObject.tag)
         {
-            if (Vector2.Distance(ThisPiece.transform.position, PS.transform.position) < 3)
+            if (Vector2.Distance(ThisPiece.transform.position, PS.transform.position) < 0.1)
             {
                 transform.position = PS.transform.position;
                 placed = true;
@@ -30,16 +30,20 @@ public class PuzzlePiece : MonoBehaviour
         if (placed) return;
         else
         {
-            //Debug.Log("Agarrada"); 
-            // offset = GetMPos() - (Vector2)transform.position;
-            transform.position = GetMPos();
-            Debug.Log(GetMPos());
+            // Use ScreenToWorldPoint on the mouse position to convert it to world space
+            Vector3 newPosition = cam2.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, cam2.nearClipPlane));
+            // Set the object's position
+            transform.position = new Vector3(newPosition.x, newPosition.y , newPosition.z + 0.4f);
+
+            // Log the new position for debugging
+            Debug.Log("New Position: " + transform.position);
+
         }
     }
-    Vector3 GetMPos()
+    /*Vector3 GetMPos()
     {
-        return cam2.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100));
+        return cam2.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, 0 , Input.mousePosition.z));
         // return new Vector3(Input.mousePosition.x, Input.mousePosition.y, -10);
 
-    }
+    }*/
 }
