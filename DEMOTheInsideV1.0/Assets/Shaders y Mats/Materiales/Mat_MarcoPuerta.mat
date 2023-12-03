@@ -102,7 +102,7 @@ Material:
     - _Has_Color_Texture: 1
     - _Has_Normal_Map_Texture: 1
     - _Hue: 0
-    - _Inside: 0
+    - _Inside: 1
     - _Is_Metal: 0
     - _Metallic: 0
     - _Normal_Strenght: -5

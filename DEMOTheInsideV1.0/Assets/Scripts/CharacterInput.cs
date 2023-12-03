@@ -56,9 +56,11 @@ public class CharacterInput : MonoBehaviour
     public Animator Door3;
     public Animator Door4;
     public GameObject Perilla1;
-    public GameObject DoorBath;
-    public GameObject DoorKitchen;
-    public GameObject DoorExit;
+    public GameObject Perilla2;
+    public GameObject Perilla3;
+    public GameObject Perilla4;
+    public GameManager GM;
+    private int loopNum;
 
     [Header("Sonidos")]
     //SonidosVariables
@@ -85,9 +87,9 @@ public class CharacterInput : MonoBehaviour
         ItemHold = false;
 
         Perilla1 = GameObject.Find("Perilla1");
-        DoorKitchen = GameObject.Find("Door2");
-        DoorBath = GameObject.Find("Door3");
-        DoorExit= GameObject.Find("Door4");
+        Perilla2 = GameObject.Find("Perilla2");
+        Perilla3 = GameObject.Find("Perilla3");
+        Perilla4 = GameObject.Find("Perilla4");
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -155,6 +157,7 @@ public class CharacterInput : MonoBehaviour
             CamMain.SetActive(true);
             CamRC.SetActive(false);
         }
+        loopNum = GM.loopNum;
     }
 
 
@@ -171,7 +174,7 @@ public class CharacterInput : MonoBehaviour
      if (Inside == false && Input.GetKeyDown(KeyCode.Tab))
         {
 
-            Debug.Log(" Inside");
+            
             Inside = true;
             CMP(1f);
             GVOut.SetActive(false);
@@ -227,14 +230,18 @@ public class CharacterInput : MonoBehaviour
 
     void Raycast()
     {
+
+        Debug.Log("loopNum"+ loopNum);
         if (selection_ != null)
         {
             var selectionRenderer = selection_.GetComponent<Renderer>();
             selectionRenderer.material = DefaultMat;
             selection_ = null;
+            
         }
         if (Focus == false && Focus2 == false && Focus3 == false)
         {
+           
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
@@ -294,7 +301,7 @@ public class CharacterInput : MonoBehaviour
                 }
                 if (selection.CompareTag("Door") && selection.position.Equals(Perilla1.transform.position)&&OpenDoor1==false&&Input.GetKeyDown(KeyCode.F))
                 {
-                    Debug.Log("Cumplida");
+                   // Debug.Log("Cumplida");
                     OpenDoor1 = true;
                     Door1.SetTrigger("Abierto");
                 }
@@ -304,37 +311,37 @@ public class CharacterInput : MonoBehaviour
                     OpenDoor1 = false;
                     Door1.SetTrigger("Cerrado");
                 }
-                if (selection.CompareTag("Door") && selection.position.Equals(DoorKitchen.transform.position) && OpenDoor2 == false && Input.GetKeyDown(KeyCode.F))
+                if (selection.CompareTag("Door") && selection.position.Equals(Perilla2.transform.position) && loopNum>=2 &&OpenDoor2 == false && Input.GetKeyDown(KeyCode.F))
                 {
                     //Debug.Log("Cumplida");
                     OpenDoor2 = true;
                     Door2.SetTrigger("Abierto");
                 }
-                else if (selection.CompareTag("Door") && selection.position.Equals(DoorKitchen.transform.position) && OpenDoor2 == true && Input.GetKeyDown(KeyCode.F))
+                else if (selection.CompareTag("Door") && selection.position.Equals(Perilla2.transform.position) && OpenDoor2 == true && Input.GetKeyDown(KeyCode.F))
                 {
                     //Debug.Log("Cumplida");
                     OpenDoor2 = false;
                     Door2.SetTrigger("Cerrado");
                 }
-                if (selection.CompareTag("Door") && selection.position.Equals(DoorBath.transform.position) && OpenDoor3 == false && Input.GetKeyDown(KeyCode.F))
+                if (selection.CompareTag("Door") && selection.position.Equals(Perilla3.transform.position) && loopNum >= 3 && OpenDoor3 == false && Input.GetKeyDown(KeyCode.F))
                 {
                     //Debug.Log("Cumplida");
                     OpenDoor3 = true;
                     Door3.SetTrigger("Abierto");
                 }
-                else if (selection.CompareTag("Door") && selection.position.Equals(DoorBath.transform.position) && OpenDoor3 == true && Input.GetKeyDown(KeyCode.F))
+                else if (selection.CompareTag("Door") && selection.position.Equals(Perilla3.transform.position) && OpenDoor3 == true && Input.GetKeyDown(KeyCode.F))
                 {
                     //Debug.Log("Cumplida");
                     OpenDoor3 = false;
                     Door3.SetTrigger("Cerrado");
                 }
-                if (selection.CompareTag("Door") && selection.position.Equals(DoorExit.transform.position) && OpenDoor4 == false && Input.GetKeyDown(KeyCode.F))
+                if (selection.CompareTag("Door") && selection.position.Equals(Perilla4.transform.position) && loopNum >= 5 && OpenDoor4 == false && Input.GetKeyDown(KeyCode.F))
                 {
                     //Debug.Log("Cumplida");
                     OpenDoor4 = true;
                     Door4.SetTrigger("Abierto");
                 }
-                else if (selection.CompareTag("Door") && selection.position.Equals(DoorExit.transform.position) && OpenDoor4 == true && Input.GetKeyDown(KeyCode.F))
+                else if (selection.CompareTag("Door") && selection.position.Equals(Perilla4.transform.position) && OpenDoor4 == true && Input.GetKeyDown(KeyCode.F))
                 {
                     //Debug.Log("Cumplida");
                     OpenDoor4 = false;
