@@ -60,6 +60,12 @@ public class CharacterInput : MonoBehaviour
     public GameObject DoorKitchen;
     public GameObject DoorExit;
 
+    [Header("Sonidos")]
+    //SonidosVariables
+    private AudioSource audioSource;
+    public AudioClip Sonido;//hay que poner uno por sonido, preferiblemente con su nombre
+    //para poner que suene un sonido solo ponen PlaySound(nombre del sonido);
+
 
 
 
@@ -82,6 +88,7 @@ public class CharacterInput : MonoBehaviour
         DoorKitchen = GameObject.Find("Door2");
         DoorBath = GameObject.Find("Door3");
         DoorExit= GameObject.Find("Door4");
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerStay(Collider other)
@@ -385,7 +392,22 @@ public class CharacterInput : MonoBehaviour
         Focus = false;
     }
 
+    void PlaySound(AudioClip sound)
+    {
+        // Check if the AudioSource and AudioClip are set
+        if (audioSource != null && sound != null)
+        {
+            // Set the AudioClip to play
+            audioSource.clip = sound;
 
+            // Play the sound
+            audioSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("AudioSource or AudioClip not set.");
+        }
+    }
 
 
 }
