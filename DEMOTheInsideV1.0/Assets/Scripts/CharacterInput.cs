@@ -55,7 +55,7 @@ public class CharacterInput : MonoBehaviour
     public Animator Door2;
     public Animator Door3;
     public Animator Door4;
-    public GameObject DoorRoom;
+    public GameObject Perilla1;
     public GameObject DoorBath;
     public GameObject DoorKitchen;
     public GameObject DoorExit;
@@ -78,7 +78,7 @@ public class CharacterInput : MonoBehaviour
 
         ItemHold = false;
 
-        DoorRoom = GameObject.Find("Door1");
+        Perilla1 = GameObject.Find("Perilla1");
         DoorKitchen = GameObject.Find("Door2");
         DoorBath = GameObject.Find("Door3");
         DoorExit= GameObject.Find("Door4");
@@ -249,7 +249,7 @@ public class CharacterInput : MonoBehaviour
                 }
 
 
-                if (selection.CompareTag("C") && Input.GetKeyDown(KeyCode.F))
+                if (ItemHold==false &&selection.CompareTag("C") && Input.GetKeyDown(KeyCode.F))
                 {
                     ActualPic = selection.gameObject;
                     ItemHold = true;
@@ -258,14 +258,14 @@ public class CharacterInput : MonoBehaviour
                 if (selection.CompareTag("Tile") && Input.GetKeyDown(KeyCode.F))
                 {
                     ActualPic = selection.gameObject;
-                    ItemHold = true;
+                    
                     ActualPic.transform.position = InventoryT.transform.position;
                 }
                 if (selection.CompareTag("Bag") && Input.GetKeyDown(KeyCode.F))
                 {
                     //Debug.Log("ispressing");
                     ActualPic = selection.gameObject;
-                    ItemHold = true;
+                    
                     ActualPic.transform.position = InventoryT.transform.position;
                 }
                 if (selection.CompareTag("Lock") && Input.GetKeyDown(KeyCode.F))
@@ -285,13 +285,13 @@ public class CharacterInput : MonoBehaviour
                     cam3.SetActive(true);
                     Focus3 = true;
                 }
-                if (selection.CompareTag("Door") && selection.position.Equals(DoorRoom.transform.position)&&OpenDoor1==false&&Input.GetKeyDown(KeyCode.F))
+                if (selection.CompareTag("Door") && selection.position.Equals(Perilla1.transform.position)&&OpenDoor1==false&&Input.GetKeyDown(KeyCode.F))
                 {
-                    //Debug.Log("Cumplida");
+                    Debug.Log("Cumplida");
                     OpenDoor1 = true;
                     Door1.SetTrigger("Abierto");
                 }
-                else if (selection.CompareTag("Door") && selection.position.Equals(DoorRoom.transform.position) && OpenDoor1 == true && Input.GetKeyDown(KeyCode.F))
+                else if (selection.CompareTag("Door") && selection.position.Equals(Perilla1.transform.position) && OpenDoor1 == true && Input.GetKeyDown(KeyCode.F))
                 {
                     //Debug.Log("Cumplida");
                     OpenDoor1 = false;

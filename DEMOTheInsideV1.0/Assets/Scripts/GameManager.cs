@@ -27,7 +27,11 @@ public class GameManager : MonoBehaviour
     public GameObject C2;
     public GameObject C3;
     public GameObject C4;
-    private Quaternion Orientation;
+    private Quaternion Orientc1;
+    private Quaternion OrientcGeneral;
+ 
+
+    
 
     //Variables de la Cocina
     public PuzzlePiece RC;
@@ -83,9 +87,16 @@ public class GameManager : MonoBehaviour
         C2pos = GameObject.Find("Frame2");
         C3pos = GameObject.Find("Frame3");
         C4pos = GameObject.Find("Frame4");
-        Orientation = new Quaternion(-0.707106829f, 0, 0, 0.707106829f);
+        Orientc1 = new Quaternion(0, 0.707106829f, -0.707106829f, 0);
+        OrientcGeneral = new Quaternion(-0.5f, 0.5f, -0.5f, 0.5f);
 
-       
+        //Quaternion(0,0.707106829,-0.707106829,0) c1
+        //Quaternion(-0.5,0.5,-0.5,0.5) c2
+        //Quaternion(-0.5,0.5,-0.5,0.5)c3
+        //Quaternion(-0.5,0.5,-0.5,0.5) c4
+
+
+
 
 
         //TP
@@ -145,22 +156,22 @@ public class GameManager : MonoBehaviour
         if (C1.transform.position.Equals(C1pos.transform.position) || C1.transform.position.Equals(C2pos.transform.position)
            || C1.transform.position.Equals(C3pos.transform.position) || C1.transform.position.Equals(C4pos.transform.position))
         {
-            C1.transform.rotation = Orientation;
+            C1.transform.rotation = Orientc1;
         }
         if (C2.transform.position.Equals(C1pos.transform.position) || C2.transform.position.Equals(C2pos.transform.position)
            || C2.transform.position.Equals(C3pos.transform.position) || C2.transform.position.Equals(C4pos.transform.position))
         {
-            C2.transform.rotation = Orientation;
+            C2.transform.rotation = OrientcGeneral;
         }
         if (C3.transform.position.Equals(C1pos.transform.position) || C3.transform.position.Equals(C2pos.transform.position)
            || C3.transform.position.Equals(C3pos.transform.position) || C3.transform.position.Equals(C4pos.transform.position))
         {
-            C3.transform.rotation = Orientation;
+            C3.transform.rotation = OrientcGeneral;
         }
         if (C4.transform.position.Equals(C1pos.transform.position)|| C4.transform.position.Equals(C2pos.transform.position)
             ||C4.transform.position.Equals(C3pos.transform.position)||C4.transform.position.Equals(C4pos.transform.position))
         {
-            C4.transform.rotation = Orientation;
+            C4.transform.rotation = OrientcGeneral;
         }
     }
 
