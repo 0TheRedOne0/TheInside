@@ -14,11 +14,24 @@ public class Keypad : MonoBehaviour
     public AudioClip incorrectSound;
     AudioSource audioSource;
 
+    public Camera cameraStudio;
+    public Camera mainCamera;
+
     private void Start()
     {
         userInput = "";
         audioSource = GetComponent<AudioSource>();
         //Anim = GetComponentInChildren<Animator>();
+
+        cameraStudio.enabled = false;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            cameraStudio.enabled = !cameraStudio.enabled;
+        }
     }
     public void ButtonClicked(string number)
     {
