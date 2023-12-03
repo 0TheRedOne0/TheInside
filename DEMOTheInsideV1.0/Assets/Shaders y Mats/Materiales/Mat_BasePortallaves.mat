@@ -85,7 +85,7 @@ Material:
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 0
     - _AlphaSrcBlend: 1
-    - _Base_Roughness: 1
+    - _Base_Roughness: 0.8
     - _BlendMode: 0
     - _Color_Contrast: 1
     - _ConservativeDepthOffsetEnable: 0
@@ -118,7 +118,7 @@ Material:
     - _Roughness_Blend: 1
     - _Roughness_Texture_Contrast: 1
     - _Roughness_White: 1
-    - _Solid_Color_Overlay: 0
+    - _Solid_Color_Overlay: 0.53
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
@@ -147,6 +147,6 @@ Material:
     m_Colors:
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Solid_Color: {r: 0.30188674, g: 0.06692771, b: 0.25533926, a: 0}
+    - _Solid_Color: {r: 0.33962262, g: 0.19466403, b: 0.020825924, a: 0}
     - _Tiling_Offset: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []

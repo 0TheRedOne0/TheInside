@@ -69,7 +69,7 @@ Material:
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 0
     - _AlphaSrcBlend: 1
-    - _Base_Roughness: 0.49
+    - _Base_Roughness: 0.609
     - _BlendMode: 0
     - _Color_Contrast: 1
     - _ConservativeDepthOffsetEnable: 0
@@ -82,7 +82,7 @@ Material:
     - _DstBlend: 0
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
-    - _Has_AO: 0
+    - _Has_AO: 1
     - _Has_Color_Texture: 1
     - _Has_Normal_Map_Texture: 1
     - _Hue: 0
@@ -91,7 +91,7 @@ Material:
     - _Metallic: 0
     - _Normal_Strenght: -0.3
     - _OpaqueCullMode: 2
-    - _OpenGL: 0
+    - _OpenGL: 1
     - _RayTracing: 0
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
