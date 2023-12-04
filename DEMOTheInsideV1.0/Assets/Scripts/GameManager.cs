@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
     public bool fifthLoop = false;
 
 
-    public int loopNum;
+    public int loopNumGM;
     public GameObject ESCloop1;
     public GameObject ESCloop2;
     public GameObject ESCloop3;
@@ -79,6 +79,10 @@ public class GameManager : MonoBehaviour
     public GameObject InsideLoop3;
     public GameObject InsideLoop4;
     public GameObject InsideLoop5;
+    public LockFunc LF;
+
+    public GameObject CamMain;
+    public GameObject cam3;
 
     //mas sonido
     private AudioSource audioSource;
@@ -133,9 +137,20 @@ public class GameManager : MonoBehaviour
         Rompechoya();
         loopManager();
         UIcontrol();
+        fourthLoop = LF.WinLF;
+        TPF();
 
 
-
+    }
+    void TPF()
+    {
+        if (fourthLoop == true)
+        {
+            Player.transform.position = StartPoint.transform.position;
+            Cursor.lockState = CursorLockMode.Locked;
+            CamMain.SetActive(true);
+            cam3.SetActive(false);
+        }
     }
     
     void UIcontrol()
@@ -263,37 +278,47 @@ public class GameManager : MonoBehaviour
     void loopManager()
     {
         
-        if (Inside == true && loopNum == 0)
+        
+        if (Inside == true && loopNumGM == 0)
         {
             InsideLoop1.SetActive(true);
-        }else if (Inside == false && loopNum == 0)
+        }else if (Inside == false && loopNumGM == 0)
         {
             InsideLoop1.SetActive(false);
         }
-        if (Inside == true && loopNum==1)
+        if (Inside == true && loopNumGM==1)
         {
             InsideLoop1.SetActive(false);
             InsideLoop2.SetActive(true);
         }
-        else if (Inside == false && loopNum >= 1)
+        else if (Inside == false && loopNumGM >= 1)
         {
             InsideLoop2.SetActive(false);
         }
-        if (Inside == true && loopNum >= 2)
+        if (Inside == true && loopNumGM >= 2)
         {
             InsideLoop2.SetActive(false);
             InsideLoop3.SetActive(true);
         }
-        else if (Inside == false && loopNum >= 2)
+        else if (Inside == false && loopNumGM >= 2)
         {
             InsideLoop3.SetActive(false);
         }
-        else if (Inside == true && loopNum >= 3)
+        if (Inside == true && loopNumGM >= 3)
         {
             InsideLoop3.SetActive(false);
             InsideLoop4.SetActive(true);
         }
-        else if (Inside == false && loopNum >= 3)
+        else if (Inside == false && loopNumGM >= 4)
+        {
+            InsideLoop4.SetActive(false);
+        }
+        if (Inside == true && loopNumGM >= 4)
+        {
+            InsideLoop3.SetActive(false);
+            InsideLoop4.SetActive(true);
+        }
+        else if (Inside == false && loopNumGM >= 5)
         {
             InsideLoop4.SetActive(false);
         }
@@ -303,27 +328,27 @@ public class GameManager : MonoBehaviour
         {
             ESCloop2.SetActive(true);
             BlockRoom.SetActive(false);
-            loopNum = 1;
+            loopNumGM = 1;
         }else if (secondLoop == true && thirdLoop==false)
         {
             ESCloop2.SetActive(true);
             BlockLiving.SetActive(false);
-            loopNum = 2;
+            loopNumGM = 2;
         }else if (thirdLoop == true && fourthLoop==false)
         {
             ESCloop3.SetActive(true);
             BlockKitchen.SetActive(false);
-            loopNum = 3;
+            loopNumGM = 3;
         }else if (fourthLoop == true && fifthLoop==false)
         {
             ESCloop4.SetActive(true);
             BlockBath.SetActive(false);
-            loopNum = 4;
+            loopNumGM = 4;
         }else if (fifthLoop == true)
         {
             ESCloop5.SetActive(true);
             BlockStudio.SetActive(false);
-            loopNum = 6;
+            loopNumGM = 6;
         }
         
        

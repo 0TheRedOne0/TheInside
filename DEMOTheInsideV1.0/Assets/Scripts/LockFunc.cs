@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LockFunc : MonoBehaviour
 {
+    public bool WinLF;
     public GameObject R1;
     public GameObject R2;
     public GameObject R3;
@@ -31,6 +32,7 @@ public class LockFunc : MonoBehaviour
         R3 = GameObject.Find("R3");
         R4 = GameObject.Find("R4");
         selected = R1;
+        
     }
 
 
@@ -71,6 +73,7 @@ public class LockFunc : MonoBehaviour
     {
         if (keys == 4)
         {
+            WinLF = true;
             Debug.Log("You Win!!");
         }
 
@@ -108,6 +111,6 @@ public class LockFunc : MonoBehaviour
         else rot = Vector3.zero;
 
         selected.transform.Rotate(rot * speed * Time.deltaTime);
-        Debug.Log("Works");
+        Debug.Log("RotationWorks");
     }
 }

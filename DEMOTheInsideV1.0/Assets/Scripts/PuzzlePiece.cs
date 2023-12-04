@@ -32,12 +32,11 @@ public class PuzzlePiece : MonoBehaviour
         if (placed) return;
         else
         {
-            CI.PlaySound(Papel);
             // Use ScreenToWorldPoint on the mouse position to convert it to world space
             Vector3 newPosition = cam2.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, cam2.nearClipPlane));
             // Set the object's position
             transform.position = new Vector3(newPosition.x, newPosition.y , newPosition.z + 0.4f);
-
+            CI.PlaySound(Papel);
             // Log the new position for debugging
             Debug.Log("New Position: " + transform.position);
 

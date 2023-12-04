@@ -48,11 +48,12 @@ public class JumpscareManager : MonoBehaviour
     public IEnumerator WaitJump()
     {
         
-            yield return new WaitForSeconds(2f);
+            //yield return new WaitForSeconds(2f);
             animP.SetBool("Jump", true);
-            yield return new WaitForSeconds(2f);
+        PlaySound();
+        yield return new WaitForSeconds(2f);
             SceneManager.LoadScene("MainScene");
-            PlaySound();
+            
         
     }
 

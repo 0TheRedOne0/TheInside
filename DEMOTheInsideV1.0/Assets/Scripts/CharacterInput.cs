@@ -60,7 +60,7 @@ public class CharacterInput : MonoBehaviour
     public GameObject Perilla3;
     public GameObject Perilla4;
     public GameManager GM;
-    private int loopNum;
+    public int loopNum;
 
     //Life for Pablo catches
     public bool firstTime;
@@ -163,6 +163,7 @@ public class CharacterInput : MonoBehaviour
 
     void Update()
     {
+        loopNum = GM.loopNumGM;
         Movement();
         AmbientC();
         Drop();
@@ -182,7 +183,7 @@ public class CharacterInput : MonoBehaviour
             CamMain.SetActive(true);
             CamRC.SetActive(false);
         }
-        loopNum = GM.loopNum;
+        
     }
 
 
