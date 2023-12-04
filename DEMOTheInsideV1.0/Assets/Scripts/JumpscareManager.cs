@@ -14,8 +14,9 @@ public class JumpscareManager : MonoBehaviour
     public GameObject CanvasRC;
     public AudioClip mySound; 
     public AudioSource audioSource;
-
-
+    //
+    public CharacterInput CI;
+    public bool firstTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,27 +26,32 @@ public class JumpscareManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        firstTime = CI.firstTime;
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (firstTime == false)
         {
-            CamMain.gameObject.SetActive(false);
-            CamJump.gameObject.SetActive(true);
-            PabloAnim.gameObject.SetActive(true);
-            StartCoroutine(WaitJump());
+            if (other.gameObject.tag == "Player")
+            {
+                CamMain.gameObject.SetActive(false);
+                CamJump.gameObject.SetActive(true);
+                PabloAnim.gameObject.SetActive(true);
+                StartCoroutine(WaitJump());
+            }
         }
     }
 
     public IEnumerator WaitJump()
     {
-        yield return new WaitForSeconds(2f);
-        animP.SetBool("Jump", true);
-        yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("MainScene");
-        PlaySound();
+        
+            yield return new WaitForSeconds(2f);
+            animP.SetBool("Jump", true);
+            yield return new WaitForSeconds(2f);
+            SceneManager.LoadScene("MainScene");
+            PlaySound();
+        
     }
 
     void PlaySound()

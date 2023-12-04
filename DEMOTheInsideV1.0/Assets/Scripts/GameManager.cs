@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
     public bool secondLoop = false;
     public bool thirdLoop = false;
     public bool fourthLoop = false;
-    public bool fitfthLoop = false;
+    public bool fifthLoop = false;
 
     public int loopNum;
     public GameObject ESCloop1;
@@ -117,8 +117,8 @@ public class GameManager : MonoBehaviour
         if (firstB.ExitBoolCI == true)
         {
             firstLoop = true;
-
         }
+        Inside = CI.Inside;
 
         Psala();
         Timer();
@@ -247,73 +247,66 @@ public class GameManager : MonoBehaviour
     }
     void loopManager()
     {
-        Inside = CI.Inside;
-        if (Inside == true)
+        
+        if (Inside == true && loopNum == 0)
         {
             InsideLoop1.SetActive(true);
-        }else if (Inside == false)
+        }else if (Inside == false && loopNum == 0)
         {
             InsideLoop1.SetActive(false);
-        }else if (Inside == true && loopNum==1)
+        }
+        if (Inside == true && loopNum==1)
         {
+            InsideLoop1.SetActive(false);
             InsideLoop2.SetActive(true);
         }
-        else if (Inside == false && loopNum == 1)
+        else if (Inside == false && loopNum >= 1)
         {
             InsideLoop2.SetActive(false);
         }
-        else if (Inside == true && loopNum == 2)
+        else if (Inside == true && loopNum >= 2)
         {
+            InsideLoop2.SetActive(false);
             InsideLoop3.SetActive(true);
         }
-        else if (Inside == false && loopNum == 2)
+        else if (Inside == false && loopNum >= 2)
         {
             InsideLoop3.SetActive(false);
         }
-        else if (Inside == true && loopNum == 3)
+        else if (Inside == true && loopNum >= 3)
         {
+            InsideLoop3.SetActive(false);
             InsideLoop4.SetActive(true);
         }
-        else if (Inside == false && loopNum == 3)
+        else if (Inside == false && loopNum >= 3)
         {
             InsideLoop4.SetActive(false);
         }
 
 
-        if ( firstLoop == true)
+        if ( firstLoop == true&& secondLoop ==false)
         {
             ESCloop2.SetActive(true);
             BlockRoom.SetActive(false);
             loopNum = 1;
-            Inside = false;
-            InsideLoop1.SetActive(false);
-        }
-       
-        if (secondLoop == true)
+        }else if (secondLoop == true && thirdLoop==false)
         {
             ESCloop2.SetActive(true);
-            Inside = false;
             BlockLiving.SetActive(false);
             loopNum = 2;
-        }
-        if (thirdLoop == true)
+        }else if (thirdLoop == true && fourthLoop==false)
         {
             ESCloop3.SetActive(true);
-            Inside = false;
             BlockKitchen.SetActive(false);
             loopNum = 3;
-        }
-        if (fourthLoop == true)
+        }else if (fourthLoop == true && fifthLoop==false)
         {
             ESCloop4.SetActive(true);
-            Inside = false;
             BlockBath.SetActive(false);
             loopNum = 4;
-        }
-        if (fitfthLoop == true)
+        }else if (fifthLoop == true)
         {
             ESCloop5.SetActive(true);
-            Inside = false;
             BlockStudio.SetActive(false);
             loopNum = 6;
         }
