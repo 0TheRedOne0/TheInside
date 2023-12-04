@@ -62,6 +62,7 @@ public class GameManager : MonoBehaviour
     public bool fourthLoop = false;
     public bool fifthLoop = false;
 
+
     public int loopNum;
     public GameObject ESCloop1;
     public GameObject ESCloop2;
@@ -78,6 +79,13 @@ public class GameManager : MonoBehaviour
     public GameObject InsideLoop3;
     public GameObject InsideLoop4;
     public GameObject InsideLoop5;
+
+    //mas sonido
+    private AudioSource audioSource;
+    public AudioClip Campanas;
+    public AudioClip Respiracion;
+//hay que poner uno por sonido, preferiblemente con su nombre
+    //para poner que suene un sonido solo ponen PlaySound(nombre del sonido);
 
 
 
@@ -108,7 +116,7 @@ public class GameManager : MonoBehaviour
         firstTut = true;
         StartCoroutine(waitWASD());
 
-       
+        audioSource = GetComponent<AudioSource>();
 
     }
 
@@ -183,29 +191,35 @@ public class GameManager : MonoBehaviour
         if (firstLoop == true)
         {
             StartCoroutine(addNum());
+            PlaySound(Campanas);
         }
         if (timerSec >= 60)
         {
             timerSec = 00f;
             timerMin++;
+            PlaySound(Campanas);
         }
         if (timerMin >= 60)
         {
             timerMin = 00f;
             timerHrs++;
+            PlaySound(Campanas);
         }
         if (timerHrs >= 12f)
         {
             am = false;
+            PlaySound(Campanas);
         }
         if (timerHrs > 12f)
         {
             timerHrs = 01f;
+            PlaySound(Campanas);
         }
         if(timerHrs<=12&& am == false)
         {
             Debug.Log("EndGame");
             JM.WaitJump();
+            PlaySound(Campanas);
         }
 
 
@@ -243,6 +257,7 @@ public class GameManager : MonoBehaviour
             camMain.SetActive(true);
             Cursor.lockState = CursorLockMode.Locked;
             thirdLoop = true;
+            PlaySound(Respiracion);
         }
     }
     void loopManager()
@@ -264,7 +279,7 @@ public class GameManager : MonoBehaviour
         {
             InsideLoop2.SetActive(false);
         }
-        else if (Inside == true && loopNum >= 2)
+        if (Inside == true && loopNum >= 2)
         {
             InsideLoop2.SetActive(false);
             InsideLoop3.SetActive(true);
@@ -312,6 +327,23 @@ public class GameManager : MonoBehaviour
         }
         
        
+    }
+
+    void PlaySound(AudioClip sound)
+    {
+        // Check if the AudioSource and AudioClip are set
+        if (audioSource != null && sound != null)
+        {
+            // Set the AudioClip to play
+            audioSource.clip = sound;
+
+            // Play the sound
+            audioSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("AudioSource or AudioClip not set.");
+        }
     }
 
 

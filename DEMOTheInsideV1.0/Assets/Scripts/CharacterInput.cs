@@ -67,8 +67,17 @@ public class CharacterInput : MonoBehaviour
 
     [Header("Sonidos")]
     //SonidosVariables
+    public JumpscareManager JM;
+    public bool Jump = false;
     private AudioSource audioSource;
-    public AudioClip Sonido;//hay que poner uno por sonido, preferiblemente con su nombre
+    public AudioClip Sonido;
+    public AudioClip CloseDoor;
+    public AudioClip OpenDoor;
+    public AudioClip Pasos;
+    public AudioClip TomarObjeto;
+    public AudioClip DropCuadro;
+    public AudioClip RomperTile;
+    public AudioClip Grito;//hay que poner uno por sonido, preferiblemente con su nombre
     //para poner que suene un sonido solo ponen PlaySound(nombre del sonido);
 
 
@@ -112,6 +121,7 @@ public class CharacterInput : MonoBehaviour
             ItemHold = true;
            ActualPic.transform.position = Inventory.transform.position;
             //transform.rotation = leftRot;
+            PlaySound(TomarObjeto);
         }
 
         else if (ItemHold == true && other.gameObject.tag == "CPos" && Input.GetKeyDown(KeyCode.F))
@@ -158,6 +168,12 @@ public class CharacterInput : MonoBehaviour
         Drop();
         TP();
         Raycast();
+        Jump = JM.Scare;
+
+        if (Jump == true) 
+        {
+            PlaySound(Grito);
+        }
 
         if (Rompiendo == true && Input.GetKeyDown(KeyCode.E))
         {
@@ -188,6 +204,7 @@ public class CharacterInput : MonoBehaviour
             CMP(1f);
             GVOut.SetActive(false);
             GVIn.SetActive(true);
+            PlaySound(Sonido);
 
         }
      else if(Inside == true && Input.GetKeyDown(KeyCode.Tab))
@@ -197,6 +214,7 @@ public class CharacterInput : MonoBehaviour
             CMP(0f);
             GVOut.SetActive(true);
             GVIn.SetActive(false);
+            PlaySound(Sonido);
         }
 
     }
@@ -210,7 +228,11 @@ public class CharacterInput : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
-
+        
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
+        {
+            PlaySound(Pasos);
+        }
         
     }
 
@@ -220,6 +242,7 @@ public class CharacterInput : MonoBehaviour
         {
             ActualPic.transform.position = DropPos.transform.position;
             ItemHold = false;
+            PlaySound(DropCuadro);
         }
     }
 
@@ -285,6 +308,8 @@ public class CharacterInput : MonoBehaviour
                     ActualPic = selection.gameObject;
                     
                     ActualPic.transform.position = InventoryT.transform.position;
+                    ActualPic.SetActive(false);
+                    PlaySound(RomperTile);
                 }
                 if (selection.CompareTag("Bag") && Input.GetKeyDown(KeyCode.F))
                 {
@@ -317,48 +342,56 @@ public class CharacterInput : MonoBehaviour
                    // Debug.Log("Cumplida");
                     OpenDoor1 = true;
                     Door1.SetTrigger("Abierto");
+                    PlaySound(OpenDoor);
                 }
                 else if (selection.CompareTag("Door") && selection.position.Equals(Perilla1.transform.position) && OpenDoor1 == true && Input.GetKeyDown(KeyCode.F))
                 {
                     //Debug.Log("Cumplida");
                     OpenDoor1 = false;
                     Door1.SetTrigger("Cerrado");
+                    PlaySound(CloseDoor);
                 }
                 if (selection.CompareTag("Door") && selection.position.Equals(Perilla2.transform.position) && loopNum>=2 &&OpenDoor2 == false && Input.GetKeyDown(KeyCode.F))
                 {
                     Debug.Log("Cumplida");
                     OpenDoor2 = true;
                     Door2.SetTrigger("Abierto");
+                    PlaySound(OpenDoor);
                 }
                 else if (selection.CompareTag("Door") && selection.position.Equals(Perilla2.transform.position) && OpenDoor2 == true && Input.GetKeyDown(KeyCode.F))
                 {
                     //Debug.Log("Cumplida");
                     OpenDoor2 = false;
                     Door2.SetTrigger("Cerrado");
+                    PlaySound(CloseDoor);
                 }
                 if (selection.CompareTag("Door") && selection.position.Equals(Perilla3.transform.position) && loopNum >= 3 && OpenDoor3 == false && Input.GetKeyDown(KeyCode.F))
                 {
                     //Debug.Log("Cumplida");
                     OpenDoor3 = true;
                     Door3.SetTrigger("Abierto");
+                    PlaySound(OpenDoor);
                 }
                 else if (selection.CompareTag("Door") && selection.position.Equals(Perilla3.transform.position) && OpenDoor3 == true && Input.GetKeyDown(KeyCode.F))
                 {
                     //Debug.Log("Cumplida");
                     OpenDoor3 = false;
                     Door3.SetTrigger("Cerrado");
+                    PlaySound(CloseDoor);
                 }
                 if (selection.CompareTag("Door") && selection.position.Equals(Perilla4.transform.position) && loopNum >= 5 && OpenDoor4 == false && Input.GetKeyDown(KeyCode.F))
                 {
                     //Debug.Log("Cumplida");
                     OpenDoor4 = true;
                     Door4.SetTrigger("Abierto");
+                    PlaySound(OpenDoor);
                 }
                 else if (selection.CompareTag("Door") && selection.position.Equals(Perilla4.transform.position) && OpenDoor4 == true && Input.GetKeyDown(KeyCode.F))
                 {
                     //Debug.Log("Cumplida");
                     OpenDoor4 = false;
                     Door4.SetTrigger("Cerrado");
+                    PlaySound(CloseDoor);
                 }
 
                 if (selection.CompareTag("Collar") && Input.GetKeyDown(KeyCode.F))
@@ -412,7 +445,7 @@ public class CharacterInput : MonoBehaviour
         Focus = false;
     }
 
-    void PlaySound(AudioClip sound)
+    public void PlaySound(AudioClip sound)
     {
         // Check if the AudioSource and AudioClip are set
         if (audioSource != null && sound != null)
