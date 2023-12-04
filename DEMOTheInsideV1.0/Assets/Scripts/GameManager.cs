@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
     public CharacterInput firstB;
    
    //MonsterVariables
-  // public CharacterInput Inside;
+    public CharacterInput CI;
+    public bool Inside;
 
     //Invntory Pos
     public GameObject Inventory;
@@ -71,6 +72,11 @@ public class GameManager : MonoBehaviour
     public GameObject BlockStudio;
     public GameObject BlockRoom;
     public GameObject BlockLiving;
+    public GameObject InsideLoop1;
+    public GameObject InsideLoop2;
+    public GameObject InsideLoop3;
+    public GameObject InsideLoop4;
+    public GameObject InsideLoop5;
 
 
 
@@ -78,7 +84,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
 
-        loopNum = 0;
+        
         //Sala
         C1 = GameObject.Find("C1");
         C2 = GameObject.Find("C2");
@@ -91,15 +97,6 @@ public class GameManager : MonoBehaviour
         Orientc1 = new Quaternion(0, 0.707106829f, -0.707106829f, 0);
         OrientcGeneral = new Quaternion(-0.5f, 0.5f, -0.5f, 0.5f);
 
-        //Quaternion(0,0.707106829,-0.707106829,0) c1
-        //Quaternion(-0.5,0.5,-0.5,0.5) c2
-        //Quaternion(-0.5,0.5,-0.5,0.5)c3
-        //Quaternion(-0.5,0.5,-0.5,0.5) c4
-
-
-
-
-
         //TP
         Player = GameObject.Find("FPplayer");
         StartPoint = GameObject.Find("StartPoint");
@@ -110,6 +107,7 @@ public class GameManager : MonoBehaviour
         firstTut = true;
         StartCoroutine(waitWASD());
 
+       
 
     }
 
@@ -243,38 +241,78 @@ public class GameManager : MonoBehaviour
             camRC.SetActive(false);
             camMain.SetActive(true);
             Cursor.lockState = CursorLockMode.Locked;
+            thirdLoop = true;
         }
     }
     void loopManager()
     {
-       
+        Inside = CI.Inside;
+        if (Inside == true)
+        {
+            InsideLoop1.SetActive(true);
+        }else if (Inside == false)
+        {
+            InsideLoop1.SetActive(false);
+        }else if (Inside == true && loopNum==1)
+        {
+            InsideLoop2.SetActive(true);
+        }
+        else if (Inside == false && loopNum == 1)
+        {
+            InsideLoop2.SetActive(false);
+        }
+        else if (Inside == true && loopNum == 2)
+        {
+            InsideLoop3.SetActive(true);
+        }
+        else if (Inside == false && loopNum == 2)
+        {
+            InsideLoop3.SetActive(false);
+        }
+        else if (Inside == true && loopNum == 3)
+        {
+            InsideLoop4.SetActive(true);
+        }
+        else if (Inside == false && loopNum == 3)
+        {
+            InsideLoop4.SetActive(false);
+        }
+
+
         if ( firstLoop == true)
         {
-            ESCloop1.SetActive(true);
+            ESCloop2.SetActive(true);
             BlockRoom.SetActive(false);
             loopNum = 1;
+            Inside = false;
+            InsideLoop1.SetActive(false);
         }
+       
         if (secondLoop == true)
         {
             ESCloop2.SetActive(true);
+            Inside = false;
             BlockLiving.SetActive(false);
             loopNum = 2;
         }
         if (thirdLoop == true)
         {
             ESCloop3.SetActive(true);
+            Inside = false;
             BlockKitchen.SetActive(false);
             loopNum = 3;
         }
         if (fourthLoop == true)
         {
             ESCloop4.SetActive(true);
+            Inside = false;
             BlockBath.SetActive(false);
             loopNum = 4;
         }
         if (fitfthLoop == true)
         {
             ESCloop5.SetActive(true);
+            Inside = false;
             BlockStudio.SetActive(false);
             loopNum = 6;
         }

@@ -30,6 +30,7 @@ public class LockFunc : MonoBehaviour
         R2 = GameObject.Find("R2");
         R3 = GameObject.Find("R3");
         R4 = GameObject.Find("R4");
+        selected = R1;
     }
 
 
