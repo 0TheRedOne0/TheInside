@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class JumpscareManager : MonoBehaviour
 {
     //variables
+    public bool Scare;
     public GameObject CamJump;
     public GameObject CamMain;
     public GameObject PabloAnim;
@@ -20,7 +21,7 @@ public class JumpscareManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+      
     }
 
     // Update is called once per frame
@@ -38,6 +39,7 @@ public class JumpscareManager : MonoBehaviour
                 CamMain.gameObject.SetActive(false);
                 CamJump.gameObject.SetActive(true);
                 PabloAnim.gameObject.SetActive(true);
+                Scare = true;
                 StartCoroutine(WaitJump());
             }
         }

@@ -147,6 +147,6 @@ Material:
     m_Colors:
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Solid_Color: {r: 0.5754717, g: 0.36102706, b: 0.5325828, a: 0}
+    - _Solid_Color: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 0}
     - _Tiling_Offset: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
