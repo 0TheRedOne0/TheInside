@@ -14,8 +14,7 @@ public class Keypad : MonoBehaviour
     public AudioClip incorrectSound;
     AudioSource audioSource;
 
-    public Camera cameraStudio;
-    public Camera mainCamera;
+  
 
     private void Start()
     {
@@ -23,16 +22,8 @@ public class Keypad : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         //Anim = GetComponentInChildren<Animator>();
 
-        cameraStudio.enabled = false;
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            cameraStudio.enabled = !cameraStudio.enabled;
-        }
-    }
     public void ButtonClicked(string number)
     {
         audioSource.PlayOneShot(clickSound);
