@@ -284,21 +284,23 @@ public class CharacterInput : MonoBehaviour
                 }
                 if (selection.CompareTag("Lock") && Input.GetKeyDown(KeyCode.F))
                 {
-                    
+                    Focus2 = true;
                     Cursor.lockState = CursorLockMode.None;
                     CamMain.SetActive(false);
                     cam2.SetActive(true);
-                    Focus2 = true;
+                    
                 }
 
                 if (selection.CompareTag("LockB") && Input.GetKeyDown(KeyCode.F))
                 {
-                    Debug.Log("CambioCam");
+                    Focus3 = true;
+                    Debug.Log("CambioCamBath");
                     Cursor.lockState = CursorLockMode.None;
                     CamMain.SetActive(false);
                     cam3.SetActive(true);
-                    Focus3 = true;
+                    
                 }
+
                 if (selection.CompareTag("Door") && selection.position.Equals(Perilla1.transform.position)&&OpenDoor1==false&&Input.GetKeyDown(KeyCode.F))
                 {
                    // Debug.Log("Cumplida");
@@ -313,7 +315,7 @@ public class CharacterInput : MonoBehaviour
                 }
                 if (selection.CompareTag("Door") && selection.position.Equals(Perilla2.transform.position) && loopNum>=2 &&OpenDoor2 == false && Input.GetKeyDown(KeyCode.F))
                 {
-                    //Debug.Log("Cumplida");
+                    Debug.Log("Cumplida");
                     OpenDoor2 = true;
                     Door2.SetTrigger("Abierto");
                 }
@@ -357,18 +359,18 @@ public class CharacterInput : MonoBehaviour
 
             
         }
-        if (Focus3 == true && Input.GetKeyDown(KeyCode.F))
+        else if (Focus3 == true && Input.GetKeyDown(KeyCode.F))
         {
-            Debug.Log("ispressingtwice");
+            //Debug.Log("ispressingtwice");
             Cursor.lockState = CursorLockMode.Locked;
             CamMain.SetActive(true);
             cam3.SetActive(false);
 
             Focus3 = false;
         }
-        if (Focus2 == true && Input.GetKeyDown(KeyCode.F))
+        else if (Focus2 == true && Input.GetKeyDown(KeyCode.F))
         {
-            Debug.Log("ispressingtwice");
+            //Debug.Log("ispressingtwice");
             Cursor.lockState = CursorLockMode.Locked;
             CamMain.SetActive(true);
             cam2.SetActive(false);
