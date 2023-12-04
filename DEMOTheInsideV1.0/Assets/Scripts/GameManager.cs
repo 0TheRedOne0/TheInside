@@ -264,7 +264,7 @@ public class GameManager : MonoBehaviour
         {
             InsideLoop2.SetActive(false);
         }
-        /*else if (Inside == true && loopNum >= 2)
+        else if (Inside == true && loopNum >= 2)
         {
             InsideLoop2.SetActive(false);
             InsideLoop3.SetActive(true);
@@ -281,7 +281,7 @@ public class GameManager : MonoBehaviour
         else if (Inside == false && loopNum >= 3)
         {
             InsideLoop4.SetActive(false);
-        }*/
+        }
 
 
         if ( firstLoop == true&& secondLoop ==false)
