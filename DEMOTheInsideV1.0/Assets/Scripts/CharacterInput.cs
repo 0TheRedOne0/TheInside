@@ -62,6 +62,9 @@ public class CharacterInput : MonoBehaviour
     public GameManager GM;
     private int loopNum;
 
+    //Life for Pablo catches
+    public bool firstTime;
+
     [Header("Sonidos")]
     //SonidosVariables
     private AudioSource audioSource;
@@ -85,6 +88,7 @@ public class CharacterInput : MonoBehaviour
 
 
         ItemHold = false;
+        firstTime = true;
 
         Perilla1 = GameObject.Find("Perilla1");
         Perilla2 = GameObject.Find("Perilla2");
@@ -95,6 +99,11 @@ public class CharacterInput : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        if (other.gameObject.tag == "Monster"&& firstTime==true)
+        {
+            transform.position = StartPoint.transform.position;
+            firstTime = false;
+        }
         
         if (ItemHold ==false && other.gameObject.tag == "C" && Input.GetKeyDown(KeyCode.F))
         {
@@ -201,6 +210,8 @@ public class CharacterInput : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
+
+        
     }
 
     void Drop()

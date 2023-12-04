@@ -25,6 +25,7 @@ TagManager:
   - LockB
   - Door
   - Collar
+  - Monster
   layers:
   - Default
   - TransparentFX
