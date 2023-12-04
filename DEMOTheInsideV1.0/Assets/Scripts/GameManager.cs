@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
     public float timerMin=00f;
     public float timerHrs= 00f;
     public bool am = true;
+    public JumpscareManager JM;
 
     //Variables de Interfaz
     public bool firstTut;
@@ -204,7 +205,7 @@ public class GameManager : MonoBehaviour
         if(timerHrs<=12&& am == false)
         {
             Debug.Log("EndGame");
-            SceneManager.LoadScene("MainScene");
+            JM.WaitJump();
         }
 
 

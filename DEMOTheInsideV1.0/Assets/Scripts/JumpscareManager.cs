@@ -11,7 +11,6 @@ public class JumpscareManager : MonoBehaviour
     public GameObject CamMain;
     public GameObject PabloAnim;
     public Animator animP;
-    public Animator animC;
     public GameObject CanvasRC;
     public AudioClip mySound; 
     public AudioSource audioSource;
@@ -40,11 +39,10 @@ public class JumpscareManager : MonoBehaviour
         }
     }
 
-    private IEnumerator WaitJump()
+    public IEnumerator WaitJump()
     {
         yield return new WaitForSeconds(2f);
         animP.SetBool("Jump", true);
-        animC.SetTrigger("Blink");
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("MainScene");
         PlaySound();
